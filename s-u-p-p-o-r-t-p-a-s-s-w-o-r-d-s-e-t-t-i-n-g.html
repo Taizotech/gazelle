@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./s-u-p-p-o-r-t-p-a-s-s-w-o-r-d-s-e-t-t-i-n-g.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="support-password-setting">
+      <div class="battery-bar9">
+        <div class="battery-status-bar9">
+          <div class="one-day-expire">96%</div>
+          <img
+            class="battery-ic-19"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line9"></div>
+      <div class="home-title-bar14">
+        <div class="home-title-bar15">
+          <div class="home-ic-parent4">
+            <button class="home-ic9" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic9"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="support-password-setting1">SUPPORT PASSWORD SETTING</div>
+          <img
+            class="settings-svgrepo-com-1-icon9"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen8">
+        <div class="keypad-tone-container">
+          <div class="keypad-tone2">
+            <div class="volume-brightness-adjusment2">
+              <div class="one-day-expire">ONE DAY EXPIRE SUPPORT PASSWORD</div>
+              <div class="toggle-button-on2">
+                <div class="rectangle-div"></div>
+                <div class="toggle-button-on-child1"></div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button4" id="nextButton">
+            <div class="done2">DONE</div>
+          </button>
+        </div>
+        <div class="div17">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

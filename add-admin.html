@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./add-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="add-admin">
+      <div class="battery-bar19">
+        <div class="battery-status-bar19">
+          <div class="confirm-password">96%</div>
+          <img
+            class="battery-ic-119"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line19"></div>
+      <div class="home-title-bar34">
+        <div class="home-title-bar35">
+          <div class="home-ic-parent14">
+            <button class="home-ic19" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic19"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="add-admin1">ADD ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon19"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen18">
+        <div class="user-credential-input-fields1">
+          <div class="user-id-passworkd1">
+            <div class="user-id2">
+              <div class="confirm-password">ADMIN ID</div>
+              <input
+                class="user-id3"
+                placeholder="Enter Admin ID"
+                type="text"
+                name="yes"
+              />
+            </div>
+            <div class="password2">
+              <div class="confirm-password">ADMIN PASSWORD</div>
+              <input
+                class="password3"
+                placeholder="Enter Admin Password"
+                type="password"
+              />
+            </div>
+            <div class="password2">
+              <div class="confirm-password">CONFIRM PASSWORD</div>
+              <input
+                class="password3"
+                placeholder="Confirm Password"
+                type="password"
+              />
+            </div>
+          </div>
+          <button class="done-button" id="doneButton">
+            <div class="done8">DONE</div>
+          </button>
+        </div>
+        <div class="div71">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-admin.html";
+        });
+      }
+
+      var doneButton = document.getElementById("doneButton");
+      if (doneButton) {
+        doneButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-added-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

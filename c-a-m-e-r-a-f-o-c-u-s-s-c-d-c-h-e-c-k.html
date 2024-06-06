@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./c-a-m-e-r-a-f-o-c-u-s-s-c-d-c-h-e-c-k.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="camera-focus-scd-check">
+      <div class="battery-bar83">
+        <div class="battery-status-bar83">
+          <div class="wifi-map-pin-ic31">
+            <img
+              class="wifi-svgrepo-com-1-131"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon31" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic31">
+            <div class="div241">96%</div>
+            <img
+              class="battery-ic-183"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line83"></div>
+      <div class="hb-variant-running-title-bar4">
+        <div class="hb-variant-running-title-bar5">
+          <div class="home-previous-page-button18">
+            <button class="home-ic81" id="homeIc"></button>
+          </div>
+          <div class="camera-focus-check">CAMERA FOCUS CHECK</div>
+          <div class="settings-svgrepo-com-111"></div>
+        </div>
+      </div>
+      <div class="hb-variant-running-div4">
+        <div class="hb-variant-running-div5">
+          <img
+            class="camera-focus-scd-check-1-icon"
+            alt=""
+            src="./public/camerafocusscdcheck-1@2x.png"
+          />
+
+          <div class="patient-name-input-field-parent">
+            <div class="patient-name-input-field4">
+              <div class="patient-name6">465</div>
+              <div class="icon-parent2">
+                <img
+                  class="settings-svgrepo-com-111"
+                  alt=""
+                  src="./public/icon3.svg"
+                />
+
+                <img
+                  class="settings-svgrepo-com-111"
+                  alt=""
+                  src="./public/icon4.svg"
+                />
+              </div>
+            </div>
+            <div class="focus-value">FOCUS VALUE</div>
+          </div>
+        </div>
+        <div class="start-test-button-parent">
+          <div class="start-test-button8">
+            <button class="start-test-button9" id="startTestButton">
+              <div class="start-test-button10">CONTINUE</div>
+            </button>
+          </div>
+          <div class="div242">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var startTestButton = document.getElementById("startTestButton");
+      if (startTestButton) {
+        startTestButton.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+    </script>
+  </body>
+</html>

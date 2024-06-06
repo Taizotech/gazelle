@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./hb-t-o-p-l-e-d-t-e-s-t-r-u-n-n-i-n-g-w-h-i-t-e.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-top-led-test-running-white">
+      <div class="battery-bar102">
+        <div class="battery-status-bar102">
+          <div class="wifi-map-pin-ic38">
+            <img
+              class="wifi-svgrepo-com-1-138"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon38" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic38">
+            <div class="div345">96%</div>
+            <img
+              class="battery-ic-1102"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line102"></div>
+      <div class="home-title-bar164">
+        <div class="home-title-bar165">
+          <div class="home-ic-wrapper4">
+            <button class="home-ic100" id="homeIc"></button>
+          </div>
+          <div class="hb-top-led1">Hb TOP LED TEST RUNNING</div>
+          <img
+            class="settings-svgrepo-com-1-icon83"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen93">
+        <div class="white-parent">
+          <div class="white1">WHITE</div>
+          <div class="hb-variant-running-div11">
+            <img
+              class="uv-board-test-blue-1-icon1"
+              alt=""
+              src="./public/uvboardtest-blue-2@2x.png"
+            />
+          </div>
+        </div>
+        <div class="cancel-test-button-group">
+          <div class="cancel-test-button2">
+            <button class="cancel-test-button3" id="cancelTestButton">
+              <div class="cancel5">CANCEL</div>
+            </button>
+          </div>
+          <div class="div346">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var cancelTestButton = document.getElementById("cancelTestButton");
+      if (cancelTestButton) {
+        cancelTestButton.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+      setTimeout(function () {
+        window.location.href = "./hb-t-o-p-l-e-d-t-e-s-t-r-u-n-n-i-n-g-r-e-d.html";
+      }, 3000);
+    </script>
+  </body>
+</html>

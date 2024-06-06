@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./s-t-a-t-u-s-l-e-d-please-waitpopup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="status-led-please-waitpopup">
+      <div class="status-led-parent">
+        <b class="status-led1">STATUS LED</b>
+        <div class="frame-child96"></div>
+        <div class="frame-parent114">
+          <div class="test-is-running-frame">
+            <div class="test-is-running-frame">
+              <div class="test-is-running2">Test is running</div>
+            </div>
+          </div>
+          <div class="test-is-running-frame">
+            <div class="please-wait-parent3">
+              <div class="test-is-running2">Please wait</div>
+              <div class="ellipse-parent4">
+                <div class="frame-child97" data-animate-on-scroll></div>
+                <div class="frame-child97" data-animate-on-scroll></div>
+                <div class="frame-child99" data-animate-on-scroll></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

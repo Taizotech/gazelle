@@ -1,0 +1,138 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.camera-test1,
+.frame-child72 {
+  position: relative;
+}
+.frame-child72 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.test-is-running {
+  position: relative;
+  font-weight: 500;
+}
+.test-is-running-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-child73,
+.frame-child75 {
+  height: 2px;
+  width: 2px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 0;
+}
+.frame-child73.animate,
+.frame-child75.animate {
+  animation: 1s ease 0s infinite normal forwards fade-in;
+}
+.ellipse-container,
+.please-wait-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+.please-wait-container {
+  align-items: center;
+  gap: var(--gap-10xs);
+}
+.camera-test-parent,
+.frame-parent108 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-parent108 {
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-sm);
+}
+.camera-test-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  gap: var(--gap-mid);
+}
+.camera-test-test-running {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+@media screen and (max-width: 960px) {
+  .frame-child73,
+  .frame-child75 {
+    opacity: 0;
+  }
+  .frame-child73.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .frame-child75.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .frame-child73,
+  .frame-child75 {
+    opacity: 0;
+  }
+  .frame-child73.animate,
+  .frame-child75.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

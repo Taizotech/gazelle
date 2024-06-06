@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./d-a-t-a-t-r-a-n-s-f-e-r-s-e-t-t-i-n-g-off.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="data-transfer-setting-off">
+      <div class="battery-bar42">
+        <div class="battery-status-bar42">
+          <div class="div135">96%</div>
+          <img
+            class="battery-ic-142"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line42"></div>
+      <div class="home-title-bar80">
+        <div class="home-title-bar81">
+          <div class="home-ic-parent35">
+            <button class="home-ic42" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic40"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="data-transfer-setting1">DATA TRANSFER SETTING</div>
+          <img
+            class="settings-svgrepo-com-1-icon42"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen41">
+        <div class="frame-parent99">
+          <div class="wireless-connection-on-container">
+            <div class="wireless-connection-on2">
+              <div class="wireless-connection-on3">
+                <div class="enable-full-data1">ENABLE FULL DATA TRANSFER</div>
+                <button class="toggle-button-off-wrapper">
+                  <button class="toggle-button-off" id="toggleButtonOff">
+                    <div class="toggle-button-off-child"></div>
+                  </button>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="next-button28" id="nextButton">
+            <div class="done18">DONE</div>
+          </button>
+        </div>
+        <div class="div136">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var toggleButtonOff = document.getElementById("toggleButtonOff");
+      if (toggleButtonOff) {
+        toggleButtonOff.addEventListener("click", function (e) {
+          window.location.href = "./d-a-t-a-t-r-a-n-s-f-e-r-s-e-t-t-i-n-g-on.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

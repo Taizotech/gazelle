@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./delete-user2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="delete-user21">
+      <div class="battery-bar73">
+        <div class="battery-status-bar73">
+          <div class="div204">96%</div>
+          <img
+            class="battery-ic-173"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line73"></div>
+      <div class="home-title-bar112">
+        <div class="home-title-bar113">
+          <div class="home-ic-parent48">
+            <button class="home-ic71" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic68"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="delete-user6">DELETE USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon57"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen67">
+        <div class="user-credential-input-fields29">
+          <div class="select-user-to-delete-container">
+            <div class="div204">SELECT USER TO DELETE</div>
+            <div class="frame-parent106">
+              <div class="u01-wrapper5">
+                <div class="u0121">
+                  <div class="u01-child19" id="ellipse"></div>
+                  <div class="div204">User 1</div>
+                </div>
+              </div>
+              <div class="u0121">
+                <div class="u01-child20"></div>
+                <div class="user-27">User 2</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button43" id="nextButton">
+            <div class="done28">DONE</div>
+          </button>
+        </div>
+        <div class="div205">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-user.html";
+        });
+      }
+
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href = "./delete-user1.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./user-1-delete-confirmation-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

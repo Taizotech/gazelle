@@ -1,0 +1,222 @@
+.battery-ic-1126,
+.div399 {
+  position: relative;
+}
+.battery-ic-1126 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-bar126,
+.battery-status-bar126 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar126 {
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  max-width: 768px;
+}
+.battery-bar126 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line126 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic124,
+.left-arrow-previous-page-ic106 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic106 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-ic-parent86 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.update-admin3 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon105 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar209 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar208,
+.user-id35 {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-title-bar208 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  flex-direction: column;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.user-id35 {
+  border: 2px solid var(--color-orange);
+  outline: 0;
+  font-family: var(--font-work-sans);
+  font-size: var(--font-size-smi);
+  background-color: transparent;
+  width: 316px;
+  height: 41px;
+  border-radius: var(--br-9xs);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-11xs) var(--padding-5xs);
+  color: var(--color-gray-600);
+}
+.password28:focus,
+.user-id35:focus {
+  border: 2px solid var(--color-orange);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.password28,
+.user-id33 {
+  display: flex;
+  justify-content: flex-start;
+}
+.user-id33 {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-4xs);
+}
+.password28 {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-work-sans);
+  font-size: var(--font-size-smi);
+  background-color: var(--color-gainsboro-200);
+  width: 316px;
+  border-radius: var(--br-9xs);
+  height: 41px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-11xs) var(--padding-5xs);
+  box-sizing: border-box;
+  color: var(--color-gray-600);
+}
+.password27,
+.user-id-passworkd8 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.user-id-passworkd8 {
+  gap: var(--gap-3xl);
+}
+.done50 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button75 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.user-credential-input-fields38 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-71xl);
+  max-width: 316px;
+}
+.div400 {
+  width: 414px;
+  position: relative;
+  font-size: var(--font-size-xs);
+  text-align: center;
+  display: inline-block;
+}
+.body-screen115,
+.update-admin-1-input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen115 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-61xl) var(--padding-mini) var(--padding-96xl);
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.update-admin-1-input-field {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

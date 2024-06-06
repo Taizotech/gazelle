@@ -1,0 +1,132 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.frame-child61,
+.loading-file {
+  position: relative;
+}
+.frame-child61 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.please-wait {
+  position: relative;
+  font-weight: 500;
+}
+.frame-child62,
+.frame-child64 {
+  height: 2px;
+  width: 2px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 0;
+}
+.frame-child62.animate,
+.frame-child64.animate {
+  animation: 1s ease 0s infinite normal forwards fade-in;
+}
+.ellipse-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+.please-wait-parent {
+  flex-direction: row;
+  gap: var(--gap-10xs);
+}
+.frame-wrapper37,
+.loading-file-parent,
+.please-wait-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper37 {
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.loading-file-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  flex-direction: column;
+  gap: var(--gap-mid);
+}
+.loading-file-please-wait-popup {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+@media screen and (max-width: 960px) {
+  .frame-child62,
+  .frame-child64 {
+    opacity: 0;
+  }
+  .frame-child62.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .frame-child64.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .frame-child62,
+  .frame-child64 {
+    opacity: 0;
+  }
+  .frame-child62.animate,
+  .frame-child64.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

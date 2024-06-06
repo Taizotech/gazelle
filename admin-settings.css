@@ -1,0 +1,291 @@
+.wifi-svgrepo-com-1-124 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.map-ic-icon24 {
+  width: 19px;
+  position: relative;
+  height: 19px;
+  object-fit: cover;
+}
+.wifi-map-pin-ic24 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 41px;
+}
+.battery-ic-163,
+.div184 {
+  position: relative;
+}
+.battery-ic-163 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-percentage-ic24,
+.battery-status-bar63 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-percentage-ic24 {
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+}
+.battery-status-bar63 {
+  flex: 1;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.battery-bar63,
+.line63 {
+  align-self: stretch;
+  overflow: hidden;
+}
+.battery-bar63 {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 100;
+  text-align: left;
+}
+.line63 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  flex-shrink: 0;
+}
+.home-ic61,
+.left-arrow-previous-page-ic58 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic58 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-ic-parent38 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.admin-settings1 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon47 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar93 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-41xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar92,
+.support-button6,
+.user-manual-button4 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-title-bar92 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 100;
+  font-size: var(--font-size-lg);
+}
+.support-button6,
+.user-manual-button4 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-11xs) var(--padding-3xs);
+  background-color: var(--color-orange);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.support-button10:focus .result-access,
+.support-button11:focus .result-access,
+.support-button12:focus .result-access,
+.support-button13:focus .result-access,
+.support-button14:focus .result-access,
+.support-button6:focus .result-access,
+.support-button7:focus .result-access,
+.support-button8:focus .result-access,
+.support-button9:focus .result-access,
+.user-manual-button10:focus .result-access,
+.user-manual-button11:focus .result-access,
+.user-manual-button4:focus .result-access,
+.user-manual-button5:focus .result-access,
+.user-manual-button6:focus .result-access,
+.user-manual-button7:focus .result-access,
+.user-manual-button8:focus .result-access,
+.user-manual-button9:focus .result-access {
+  color: var(--color-gray-300);
+}
+.help-menu-buttons8 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-lg);
+  max-width: 412px;
+}
+.support-button7 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-11xs) var(--padding-3xs);
+  background-color: var(--color-orange);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.result-access {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-family: var(--font-work-sans);
+  color: var(--color-white);
+  text-align: center;
+}
+.support-button10,
+.support-button11,
+.support-button12,
+.support-button13,
+.support-button14,
+.support-button8,
+.support-button9,
+.user-manual-button10,
+.user-manual-button11,
+.user-manual-button5,
+.user-manual-button6,
+.user-manual-button7,
+.user-manual-button8,
+.user-manual-button9 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-11xs) var(--padding-3xs);
+  background-color: var(--color-orange);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  height: 54px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.support-button14 {
+  max-width: 191px;
+}
+.help-menu-buttons16 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 191px;
+}
+.support-button15 {
+  flex: 1;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  height: 54px;
+  overflow: hidden;
+  max-width: 191px;
+}
+.help-menu-buttons-container,
+.help-menu-buttons-parent1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+}
+.help-menu-buttons-parent1 {
+  align-self: stretch;
+  flex-direction: row;
+}
+.help-menu-buttons-container {
+  width: 100%;
+  flex-direction: column;
+  max-width: 400px;
+}
+.div185 {
+  width: 414px;
+  position: relative;
+  display: inline-block;
+}
+.admin-settings,
+.body-screen57 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body-screen57 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: var(--padding-11xl) var(--padding-mini) var(--padding-61xl);
+  gap: var(--gap-61xl);
+  color: var(--color-black);
+}
+.admin-settings {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

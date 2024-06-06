@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./e-n-t-e-r-c-u-s-t-o-m-q-u-e-s-t-i-o-n-s.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="enter-custom-questions">
+      <div class="battery-bar137">
+        <div class="battery-status-bar137">
+          <div class="div421">96%</div>
+          <img
+            class="battery-ic-1137"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line137"></div>
+      <div class="home-title-bar230">
+        <div class="home-title-bar231">
+          <div class="home-ic-parent97">
+            <button class="home-ic135" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic117"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="enter-custom-questions1">ENTER CUSTOM QUESTIONS</div>
+          <img
+            class="settings-svgrepo-com-1-icon116"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen126">
+        <div class="user-credential-input-fields40">
+          <div class="user-id-container">
+            <div class="user-id39">
+              <div class="div421">QUSETION 1</div>
+              <input
+                class="user-id40"
+                placeholder="Enter Question 1"
+                type="text"
+                name="yes"
+              />
+            </div>
+            <div class="user-id39">
+              <div class="div421">QUSETION 2</div>
+              <input
+                class="user-id40"
+                placeholder="Enter Question 2"
+                type="text"
+                name="yes"
+              />
+            </div>
+            <div class="user-id39">
+              <div class="div421">QUSETION 3</div>
+              <input
+                class="user-id40"
+                placeholder="Enter Question 3"
+                type="text"
+                name="yes"
+              />
+            </div>
+          </div>
+        </div>
+        <button class="done-button13" id="doneButton">
+          <div class="done55">DONE</div>
+        </button>
+        <div class="div422">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var doneButton = document.getElementById("doneButton");
+      if (doneButton) {
+        doneButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

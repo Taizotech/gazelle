@@ -1,0 +1,58 @@
+.frame-child59,
+.usb-drive {
+  position: relative;
+}
+.frame-child59 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.checking-usb-drive {
+  width: 327px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.checking-usb-drive-and-prepari-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper35 {
+  flex-direction: column;
+}
+.frame-wrapper34,
+.frame-wrapper35,
+.usb-drive-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper34 {
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.usb-drive-parent {
+  position: absolute;
+  top: 101px;
+  left: 14px;
+  flex-direction: column;
+  gap: var(--gap-mid);
+}
+.usb-drive-checking-popup {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

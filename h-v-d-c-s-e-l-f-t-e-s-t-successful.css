@@ -1,0 +1,49 @@
+.frame-child77,
+.hvdc-self-test {
+  position: relative;
+}
+.frame-child77 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.successful2 {
+  position: relative;
+  font-weight: 500;
+}
+.frame-wrapper50,
+.hvdc-self-test-parent,
+.successful-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper50,
+.hvdc-self-test-parent {
+  flex-direction: column;
+}
+.frame-wrapper50 {
+  font-size: var(--font-size-sm);
+}
+.hvdc-self-test-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  gap: var(--gap-mid);
+}
+.hvdc-self-test-successful {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

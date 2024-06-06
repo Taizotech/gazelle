@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./admin-2-updated-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="admin-2-updated-popup">
+      <div class="battery-bar133">
+        <div class="battery-status-bar133">
+          <div class="wifi-map-pin-ic60">
+            <img
+              class="wifi-svgrepo-com-1-160"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon60" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic60">
+            <div class="div413">96%</div>
+            <img
+              class="battery-ic-1133"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line133"></div>
+      <div class="home-title-bar222">
+        <div class="home-title-bar223">
+          <div class="home-ic-parent93">
+            <button class="home-ic131" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic113"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="edit-user16">EDIT USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon112"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen122">
+        <div class="help-menu-buttons-parent23">
+          <div class="help-menu-buttons70">
+            <button class="support-button70" id="supportButton">
+              <b class="add-user16">ADD USER</b>
+            </button>
+            <button class="user-manual-button41" id="userManualButton">
+              <b class="add-user16">DELETE USER</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons71">
+            <button class="support-button71" id="supportButton1">
+              <b class="add-user16">DATA TRANSFER SETTINGS</b>
+            </button>
+          </div>
+        </div>
+        <div class="div414">14:24 15/11/2023</div>
+      </div>
+      <div class="admin-2-updated-popup-child"></div>
+      <div class="loading-file-please-wait-do-no15">
+        <div class="admin-updated-group">
+          <b class="div413">ADMIN UPDATED</b>
+          <div class="frame-child135"></div>
+          <div class="frame-wrapper101">
+            <div class="frame-wrapper102">
+              <div class="frame-wrapper103">
+                <div class="admin-2-frame">
+                  <div class="edit-user16">Admin 2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="next-button84" id="nextButton">
+        <div class="continue14">CONTINUE</div>
+      </button>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var supportButton = document.getElementById("supportButton");
+      if (supportButton) {
+        supportButton.addEventListener("click", function (e) {
+          window.location.href = "./add-user.html";
+        });
+      }
+
+      var userManualButton = document.getElementById("userManualButton");
+      if (userManualButton) {
+        userManualButton.addEventListener("click", function (e) {
+          window.location.href = "./c-o-v-i-d-19-p-a-t-i-e-n-t-i-n-f-o.html";
+        });
+      }
+
+      var supportButton1 = document.getElementById("supportButton1");
+      if (supportButton1) {
+        supportButton1.addEventListener("click", function (e) {
+          window.location.href = "./hb-v-a-r-i-a-n-t-p-a-t-i-e-n-t-i-n-f-o.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./edit-admin.html";
+        });
+      }
+    </script>
+  </body>
+</html>

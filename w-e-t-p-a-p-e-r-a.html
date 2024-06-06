@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./w-e-t-p-a-p-e-r-a.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="wet-paper-a">
+      <div class="battery-bar49">
+        <div class="battery-status-bar49">
+          <div class="wifi-map-pin-ic11">
+            <img
+              class="wifi-svgrepo-com-1-111"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon11" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic11">
+            <div class="div144">96%</div>
+            <img
+              class="battery-ic-149"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line49"></div>
+      <div class="wet-paper-title-bar">
+        <div class="wet-paper-title-bar1">
+          <div class="home-previous-page-button5">
+            <button class="home-ic47" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic45"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="wet-paper">WET PAPER</div>
+          <div class="settings-svgrepo-com-14"></div>
+        </div>
+      </div>
+      <div class="body-screen48">
+        <div class="wet-paper-div">
+          <img class="wet-paper-a-video-gif" src="./public/video2a.gif" />
+
+          <div class="start-timer-button4" id="startTimerButtonContainer">
+            <button class="start-timer-button5">
+              <div class="start-timer2">START TIMER</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-b.html";
+        });
+      }
+
+      var startTimerButtonContainer = document.getElementById(
+        "startTimerButtonContainer"
+      );
+      if (startTimerButtonContainer) {
+        startTimerButtonContainer.addEventListener("click", function (e) {
+          window.location.href = "./w-e-t-p-a-p-e-r-b.html";
+        });
+      }
+    </script>
+  </body>
+</html>

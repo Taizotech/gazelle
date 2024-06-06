@@ -1,0 +1,99 @@
+.add-new-test {
+  align-self: stretch;
+  font-weight: 600;
+}
+.add-new-test,
+.new-test-name {
+  position: relative;
+}
+.patient-id-input-field {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-work-sans);
+  font-size: var(--font-size-smi);
+  background-color: var(--color-gainsboro-200);
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  height: 41px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-mini) var(--padding-11xs)
+    var(--padding-5xs);
+  box-sizing: border-box;
+  color: var(--color-gray-600);
+}
+.patient-id-input-field:focus {
+  border: 2px solid var(--color-orange);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.patient-id {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  text-align: left;
+}
+.accept {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: center;
+}
+.continue-button4,
+.edit-continue-button1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.continue-button4 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--color-navajowhite);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  height: 32px;
+  overflow: hidden;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 120px;
+}
+.edit-continue-button1 {
+  width: 300px;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+}
+.add-new-test-name-parent {
+  position: absolute;
+  top: 34px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.add-new-test-name-popup {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  height: 264px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-work-sans);
+}

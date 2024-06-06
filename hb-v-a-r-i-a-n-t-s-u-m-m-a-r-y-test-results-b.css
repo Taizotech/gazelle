@@ -1,0 +1,350 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.wifi-svgrepo-com-1-11 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.map-ic-icon1 {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  object-fit: cover;
+}
+.wifi-map-pin-ic1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 41px;
+}
+.battery-ic-11,
+.div1 {
+  position: relative;
+}
+.battery-ic-11 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-percentage-ic1 {
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+}
+.battery-bar1,
+.battery-percentage-ic1,
+.battery-status-bar1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar1 {
+  flex: 1;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.battery-bar1 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+  text-align: left;
+}
+.line1 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic1,
+.left-arrow-previous-page-ic1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic1 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-previous-page-button1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.hb-variant-summary {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon1 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hb-variant-summary-title-bar1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.hb-variant-summary-title-bar {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  font-size: var(--font-size-xl);
+}
+.anemia {
+  position: relative;
+  font-weight: 500;
+}
+.anemia-results-chart {
+  height: 153px;
+  width: 27px;
+  position: relative;
+  background-color: var(--color-white);
+  z-index: 0;
+}
+.div-line-2,
+.div-line-3 {
+  background-color: var(--color-gray-500);
+  height: 1px;
+}
+.div-line-3 {
+  position: absolute;
+  margin: 0 !important;
+  top: 115.5px;
+  left: 1px;
+  width: 25px;
+  z-index: 1;
+}
+.div-line-2 {
+  top: 75.5px;
+  z-index: 2;
+}
+.div-line-1,
+.div-line-2,
+.filled-bar {
+  width: 25px;
+  position: absolute;
+  margin: 0 !important;
+  left: 1px;
+}
+.div-line-1 {
+  top: 38.5px;
+  background-color: var(--color-gray-500);
+  height: 1px;
+  z-index: 3;
+}
+.filled-bar {
+  height: 75px;
+  top: 76.5px;
+  background-color: rgba(254, 73, 73, 0.85);
+  opacity: 0;
+  z-index: 4;
+}
+.filled-bar.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}
+.anemia-results-div4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.mild,
+.normal {
+  width: 29px;
+  height: 9px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  opacity: 0;
+}
+.mild.animate,
+.moderate.animate,
+.normal.animate,
+.severe.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.mild {
+  width: 17px;
+}
+.chart-result-type1,
+.moderate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.chart-result-type1 {
+  gap: var(--gap-5xl);
+}
+.moderate {
+  opacity: 0;
+}
+.severe {
+  width: 27px;
+  height: 9px;
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  opacity: 0;
+}
+.chart-result-type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 21px;
+}
+.anemia-results-div2,
+.anemia-results-div3 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-7xs);
+}
+.anemia-results-div3 {
+  flex-direction: row;
+  text-align: left;
+  font-size: var(--font-size-5xs);
+}
+.anemia-results-div2 {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro-100);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-mini) var(--padding-xl);
+}
+.print {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.print-button,
+.print-button1,
+.print-button2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.print-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  width: 112px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+.print-button,
+.print-button1 {
+  align-items: flex-start;
+}
+.print-button {
+  align-self: stretch;
+  justify-content: space-between;
+}
+.anemia-results-div1 {
+  width: 100%;
+  align-items: center;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-71xl);
+  max-width: 350px;
+}
+.anemia-results-div,
+.anemia-results-div1,
+.hb-variant-summary-test-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.anemia-results-div {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 727px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  padding: var(--padding-26xl) var(--padding-mini) var(--padding-61xl);
+  box-sizing: border-box;
+  color: var(--color-black);
+}
+.hb-variant-summary-test-result {
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+.image-17-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 503px;
+  object-fit: cover;
+}
+.new-report {
+  width: 356px;
+  position: relative;
+  background-color: var(--color-white);
+  height: 503px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./hb-v-a-r-i-a-n-t-t-e-s-t-c-a-l-i-b-r-a-t-i-o-n-1.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-variant-test-calibration-1">
+      <div class="battery-bar39">
+        <div class="battery-status-bar39">
+          <div class="last-calibration-result">96%</div>
+          <img
+            class="battery-ic-139"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line39"></div>
+      <div class="home-title-bar74">
+        <div class="home-title-bar75">
+          <div class="home-ic-wrapper">
+            <button class="home-ic39" id="homeIc"></button>
+          </div>
+          <div class="hb-variant-test5">Hb VARIANT TEST CALIBRATION</div>
+          <img
+            class="settings-svgrepo-com-1-icon39"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen38">
+        <div class="frame-parent94">
+          <div class="frame-parent95">
+            <div class="frame-parent96">
+              <div class="last-calibration-result-parent">
+                <div class="last-calibration-result">
+                  LAST CALIBRATION RESULT:
+                </div>
+                <div class="last-calibration-result">
+                  LAST CALIBRATION DATE:
+                </div>
+              </div>
+              <div class="last-calibration-result-parent">
+                <div class="last-calibration-result">PASS</div>
+                <div class="last-calibration-result">07/09/2023</div>
+              </div>
+            </div>
+            <div class="last-calibration-result">
+              <p class="calibration-successfully-compl">
+                Calibration successfully completed
+              </p>
+              <p class="calibration-successfully-compl">
+                All results meet manufacturer specifications
+              </p>
+            </div>
+            <div class="last-calibration-result">
+              <span>Press </span>
+              <b>PDF REPORT</b>
+              <span> button for report</span>
+            </div>
+          </div>
+          <div class="frame-child58"></div>
+          <div class="press-start-button-container">
+            <span>Press </span>
+            <b>START</b>
+            <span> button to perform a new Hb Variant Test calibration</span>
+          </div>
+        </div>
+        <div class="edit-continue-button4">
+          <button class="continue-button10">
+            <div class="pdf-report">START</div>
+          </button>
+          <button class="continue-button10" id="continueButton1">
+            <div class="pdf-report">PDF REPORT</div>
+          </button>
+          <button class="continue-button10" id="continueButton2">
+            <div class="pdf-report">EXIT</div>
+          </button>
+        </div>
+        <div class="div130">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var continueButton1 = document.getElementById("continueButton1");
+      if (continueButton1) {
+        continueButton1.addEventListener("click", function (e) {
+          window.location.href =
+            "./hb-v-a-r-i-a-n-t-t-e-s-t-c-a-l-i-b-r-a-t-i-o-n-2.html";
+        });
+      }
+
+      var continueButton2 = document.getElementById("continueButton2");
+      if (continueButton2) {
+        continueButton2.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

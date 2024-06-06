@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./review-patient-hb-variant-selection.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="review-patient-hb-variant-sele">
+      <div class="battery-bar18">
+        <div class="battery-status-bar18">
+          <div class="demo">96%</div>
+          <img
+            class="battery-ic-118"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line18"></div>
+      <div class="home-title-bar32">
+        <div class="home-title-bar33">
+          <div class="home-ic-parent13">
+            <button class="home-ic18" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic18"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="review-patient1">REVIEW PATIENT</div>
+          <img
+            class="settings-svgrepo-com-1-icon18"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen17">
+        <div class="frame-parent73">
+          <div class="frame-parent74">
+            <div class="test-id-parent">
+              <div class="test-id">TEST ID</div>
+              <img class="icon8" alt="" src="./public/icon2.svg" />
+            </div>
+            <div class="frame-child46"></div>
+            <div class="u62-selected-parent">
+              <div class="u62-selected">
+                <div class="u62-selected1">
+                  <div class="u62-selected2"></div>
+                  <div class="demo">U62</div>
+                </div>
+              </div>
+              <div class="u62-selected1">
+                <div class="u01-child3"></div>
+                <div class="demo">U61</div>
+              </div>
+              <div class="u62-selected1">
+                <div class="u01-child3"></div>
+                <div class="demo">U60</div>
+              </div>
+              <div class="u62-selected1">
+                <div class="u01-child3"></div>
+                <div class="demo">U59</div>
+              </div>
+              <div class="u62-selected1">
+                <div class="u01-child3"></div>
+                <div class="demo">U58</div>
+              </div>
+            </div>
+          </div>
+          <div class="patient-id-parent">
+            <div class="patient-id1">PATIENT ID</div>
+            <div class="frame-child47"></div>
+            <div class="a19-parent">
+              <div class="patient-id1">A19</div>
+              <div class="patient-id1">A19</div>
+              <div class="patient-id1">A19</div>
+              <div class="demo">DEMO</div>
+              <div class="patient-id1">DEMO</div>
+            </div>
+          </div>
+          <div class="user-parent">
+            <div class="demo">USER</div>
+            <div class="frame-child47"></div>
+            <div class="user-1-parent">
+              <div class="patient-id1">User 1</div>
+              <div class="patient-id1">User 1</div>
+              <div class="patient-id1">User 2</div>
+              <div class="patient-id1">User 2</div>
+              <div class="patient-id1">User 1</div>
+            </div>
+          </div>
+          <div class="frame-parent75">
+            <div class="date-parent">
+              <div class="demo">DATE</div>
+              <img class="icon8" alt="" src="./public/icon2.svg" />
+            </div>
+            <div class="frame-child47"></div>
+            <div class="parent">
+              <div class="patient-id1">14-09-2023 16:28:24</div>
+              <div class="patient-id1">15-09-2023 15:19:01</div>
+              <div class="patient-id1">15-09-2023 15:28:03</div>
+              <div class="patient-id1">15-09-2023 15:28:31</div>
+              <div class="patient-id1">15-09-2023 15:02:24</div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent76">
+          <div class="next-button-parent">
+            <button class="next-button10" id="nextButton">
+              <div class="report-viewer">REPORT VIEWER</div>
+            </button>
+            <button class="next-button10" id="nextButton1">
+              <div class="report-viewer">TRANSFER SELECTED</div>
+            </button>
+            <button class="next-button10" id="nextButton2">
+              <div class="report-viewer">TRANSFER ALL</div>
+            </button>
+          </div>
+          <div class="patient-id1">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="currentReportPopup" class="popup-overlay" style="display: none">
+      <div class="current-report">
+        <img class="image-16-icon" alt="" src="./public/image-16@2x.png" />
+      </div>
+    </div>
+
+    <div id="uSBDRIVECheckingPopup" class="popup-overlay" style="display: none">
+      <div class="usb-drive-checking-popup">
+        <div class="usb-drive-parent">
+          <b class="usb-drive">USB DRIVE</b>
+          <div class="frame-child59"></div>
+          <div class="frame-wrapper34">
+            <div class="frame-wrapper35">
+              <div class="checking-usb-drive-and-prepari-wrapper">
+                <div class="checking-usb-drive-and-prepari-wrapper">
+                  <div class="checking-usb-drive">
+                    Checking USB drive and preparing data for transfer This may
+                    take a few minutes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./review-patient-settings.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function () {
+          var popup = document.getElementById("currentReportPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(48, 48, 48, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var nextButton1 = document.getElementById("nextButton1");
+      if (nextButton1) {
+        nextButton1.addEventListener("click", function () {
+          var popup = document.getElementById("uSBDRIVECheckingPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(203, 203, 203, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var nextButton2 = document.getElementById("nextButton2");
+      if (nextButton2) {
+        nextButton2.addEventListener("click", function () {
+          var popup = document.getElementById("uSBDRIVECheckingPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(203, 203, 203, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+    </script>
+  </body>
+</html>

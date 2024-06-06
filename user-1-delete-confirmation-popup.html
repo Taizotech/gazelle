@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./user-1-delete-confirmation-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="user-1-delete-confirmation-pop">
+      <div class="battery-bar113">
+        <div class="battery-status-bar113">
+          <div class="wifi-map-pin-ic49">
+            <img
+              class="wifi-svgrepo-com-1-149"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon49" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic49">
+            <div class="confirm-delete-user">96%</div>
+            <img
+              class="battery-ic-1113"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line113"></div>
+      <div class="home-title-bar182">
+        <div class="home-title-bar183">
+          <div class="home-ic-parent73">
+            <button class="home-ic111" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic93"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="edit-user5">EDIT USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon92"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen102">
+        <div class="help-menu-buttons-parent12">
+          <div class="help-menu-buttons48">
+            <button class="support-button48" id="supportButton">
+              <b class="add-user5">ADD USER</b>
+            </button>
+            <button class="user-manual-button30" id="userManualButton">
+              <b class="add-user5">DELETE USER</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons49">
+            <button class="support-button49" id="supportButton1">
+              <b class="add-user5">DATA TRANSFER SETTINGS</b>
+            </button>
+          </div>
+        </div>
+        <div class="div369">14:24 15/11/2023</div>
+      </div>
+      <div class="user-1-delete-confirmation-pop-child"></div>
+      <div class="loading-file-please-wait-do-no3">
+        <div class="confirm-delete-user-parent">
+          <b class="confirm-delete-user">CONFIRM DELETE USER</b>
+          <div class="frame-child116"></div>
+          <div class="frame-wrapper67">
+            <div class="frame-wrapper68">
+              <div class="frame-wrapper69">
+                <div class="user-1-wrapper">
+                  <div class="edit-user5">User 1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="next-button58" id="nextButton">
+        <div class="no4">NO</div>
+      </button>
+      <button class="next-button59" id="nextButton1">
+        <div class="no4">YES</div>
+      </button>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var supportButton = document.getElementById("supportButton");
+      if (supportButton) {
+        supportButton.addEventListener("click", function (e) {
+          window.location.href = "./add-user.html";
+        });
+      }
+
+      var userManualButton = document.getElementById("userManualButton");
+      if (userManualButton) {
+        userManualButton.addEventListener("click", function (e) {
+          window.location.href = "./c-o-v-i-d-19-p-a-t-i-e-n-t-i-n-f-o.html";
+        });
+      }
+
+      var supportButton1 = document.getElementById("supportButton1");
+      if (supportButton1) {
+        supportButton1.addEventListener("click", function (e) {
+          window.location.href = "./hb-v-a-r-i-a-n-t-p-a-t-i-e-n-t-i-n-f-o.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./delete-user.html";
+        });
+      }
+
+      var nextButton1 = document.getElementById("nextButton1");
+      if (nextButton1) {
+        nextButton1.addEventListener("click", function (e) {
+          window.location.href = "./user-1-deleted-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

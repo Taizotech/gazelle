@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./d-e-v-i-c-e-r-e-g-i-s-t-r-a-t-i-o-n.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="device-registration1">
+      <div class="battery-bar91">
+        <div class="battery-status-bar91">
+          <div class="wifi-map-pin-ic34">
+            <img
+              class="wifi-svgrepo-com-1-134"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon34" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic34">
+            <div class="div311">96%</div>
+            <img
+              class="battery-ic-191"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line91"></div>
+      <div class="home-title-bar142">
+        <div class="home-title-bar143">
+          <div class="home-ic-parent61">
+            <button class="home-ic89" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic81"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="device-registration2">DEVICE REGISTRATION</div>
+          <img
+            class="settings-svgrepo-com-1-icon72"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen82">
+        <div class="hb-variant-running4">
+          <div class="user-id-password-input-field1">
+            <div class="patient-info-details3">
+              <div class="patient-id12">
+                <div class="device-id">DEVICE ID</div>
+                <div class="device-id">GZ1000001803</div>
+              </div>
+              <div class="patient-id12">
+                <div class="device-id">DEVICE MAC ID</div>
+                <div class="device-id">60:8A:10:E9:BE:A6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="start-test-button-parent1">
+          <div class="start-test-button20">
+            <button class="start-test-button21" id="startTestButton">
+              <div class="start-test-button22">DONE</div>
+            </button>
+          </div>
+          <div class="div312">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+
+      var startTestButton = document.getElementById("startTestButton");
+      if (startTestButton) {
+        startTestButton.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+    </script>
+  </body>
+</html>

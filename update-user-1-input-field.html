@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./update-user-1-input-field.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="update-user-1-input-field">
+      <div class="battery-bar119">
+        <div class="battery-status-bar119">
+          <div class="div380">96%</div>
+          <img
+            class="battery-ic-1119"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line119"></div>
+      <div class="home-title-bar194">
+        <div class="home-title-bar195">
+          <div class="home-ic-parent79">
+            <button class="home-ic117" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic99"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="update-user4">UPDATE USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon98"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen108">
+        <div class="user-credential-input-fields32">
+          <div class="user-id-passworkd6">
+            <div class="user-id27">
+              <div class="div380">USER ID</div>
+              <input
+                class="user-id29"
+                value="User 1"
+                placeholder="Enter User ID"
+                type="text"
+              />
+            </div>
+            <div class="password19">
+              <div class="div380">USER PASSWORD</div>
+              <input
+                class="password20"
+                placeholder="Enter User Password"
+                type="password"
+              />
+            </div>
+            <div class="password19">
+              <div class="div380">CONFIRM PASSWORD</div>
+              <input
+                class="password20"
+                placeholder="Confirm Password"
+                type="password"
+              />
+            </div>
+          </div>
+          <button class="next-button66" id="nextButton">
+            <div class="done44">DONE</div>
+          </button>
+        </div>
+        <div class="div381">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./update-user1.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./user-1-updated-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

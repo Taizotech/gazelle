@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./edit-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="edit-admin">
+      <div class="battery-bar26">
+        <div class="battery-status-bar26">
+          <div class="wifi-map-pin-ic5">
+            <img
+              class="wifi-svgrepo-com-1-15"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon5" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic5">
+            <div class="div84">96%</div>
+            <img
+              class="battery-ic-126"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line26"></div>
+      <div class="home-title-bar48">
+        <div class="home-title-bar49">
+          <div class="home-ic-parent21">
+            <button class="home-ic26" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic26"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="edit-admin1">EDIT ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon26"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen25">
+        <div class="help-menu-buttons-parent">
+          <div class="help-menu-buttons4">
+            <button class="support-button2" id="supportButton">
+              <b class="add-admin2">ADD ADMIN</b>
+            </button>
+            <button class="user-manual-button2" id="userManualButton">
+              <b class="add-admin2">DELETE ADMIN</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons5" id="helpMenuButtonsContainer1">
+            <button class="support-button3">
+              <b class="add-admin2">UPDATE ADMIN</b>
+            </button>
+          </div>
+        </div>
+        <div class="div85">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var supportButton = document.getElementById("supportButton");
+      if (supportButton) {
+        supportButton.addEventListener("click", function (e) {
+          window.location.href = "./add-admin.html";
+        });
+      }
+
+      var userManualButton = document.getElementById("userManualButton");
+      if (userManualButton) {
+        userManualButton.addEventListener("click", function (e) {
+          window.location.href = "./delete-admin.html";
+        });
+      }
+
+      var helpMenuButtonsContainer1 = document.getElementById(
+        "helpMenuButtonsContainer1"
+      );
+      if (helpMenuButtonsContainer1) {
+        helpMenuButtonsContainer1.addEventListener("click", function (e) {
+          window.location.href = "./update-find-admin.html";
+        });
+      }
+    </script>
+  </body>
+</html>

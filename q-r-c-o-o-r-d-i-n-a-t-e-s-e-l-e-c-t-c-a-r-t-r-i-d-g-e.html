@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./q-r-c-o-o-r-d-i-n-a-t-e-s-e-l-e-c-t-c-a-r-t-r-i-d-g-e.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="qr-coordinate-select-cartridge">
+      <div class="battery-bar110">
+        <div class="battery-status-bar110">
+          <div class="wifi-map-pin-ic46">
+            <img
+              class="wifi-svgrepo-com-1-146"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon46" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic46">
+            <div class="div361">96%</div>
+            <img
+              class="battery-ic-1110"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line110"></div>
+      <div class="home-title-bar180">
+        <div class="home-title-bar181">
+          <div class="home-ic-parent72">
+            <button class="home-ic108" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic92"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="select-cartridge">SELECT CARTRIDGE</div>
+          <img
+            class="settings-svgrepo-com-1-icon91"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen101">
+        <div class="hb-variant-running6">
+          <div class="select-cartridge-options-conta">
+            <div class="select-cartridge-options">
+              <div class="scd-cartridge">
+                <input class="scd-cartridge-child" type="radio" />
+
+                <div class="div361">SCD CARTRIDGE</div>
+              </div>
+              <div class="scd-cartridge">
+                <input class="scd-cartridge-child" type="radio" />
+
+                <div class="div361">COVID 1 CARTRIDGE</div>
+              </div>
+              <div class="scd-cartridge">
+                <input class="scd-cartridge-child" type="radio" />
+
+                <div class="div361">COVID 2 CARTRIDGE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="start-test-button-parent2">
+          <div class="start-test-button27">
+            <button class="start-test-button28" id="startTestButton">
+              <div class="start-test-button29">DONE</div>
+            </button>
+          </div>
+          <div class="div362">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+
+      var startTestButton = document.getElementById("startTestButton");
+      if (startTestButton) {
+        startTestButton.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./review-patient-covid-19-settings.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="review-patient-covid-19-settin">
+      <div class="battery-bar123">
+        <div class="battery-status-bar123">
+          <div class="div388">96%</div>
+          <img
+            class="battery-ic-1123"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line123"></div>
+      <div class="home-title-bar202">
+        <div class="home-title-bar203">
+          <div class="home-ic-parent83">
+            <button class="home-ic121" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic103"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="review-patient7">REVIEW PATIENT</div>
+          <img
+            class="settings-svgrepo-com-1-icon102"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen112">
+        <div class="user-credential-input-fields36">
+          <div class="select-patient-type-to-review-container">
+            <div class="select-patient-type3">
+              SELECT PATIENT TYPE TO REVIEW
+            </div>
+            <div class="frame-parent140">
+              <div class="hb-variant1-wrapper">
+                <div class="hb-variant11">
+                  <div class="hb-variant12" id="hbVariant1"></div>
+                  <div class="hb-variant8">Hb Variant</div>
+                </div>
+              </div>
+              <div class="hb-variant11">
+                <div class="u01-child53" id="ellipse"></div>
+                <div class="hb-variant8">Covid-19</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button70" id="nextButton">
+            <div class="done48">DONE</div>
+          </button>
+        </div>
+        <div class="div389">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var hbVariant1 = document.getElementById("hbVariant1");
+      if (hbVariant1) {
+        hbVariant1.addEventListener("click", function (e) {
+          window.location.href = "./review-patient-hb-variant-settings.html";
+        });
+      }
+
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href = "./delete-user2.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./review-patient-loading-file-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

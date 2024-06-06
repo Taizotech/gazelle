@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./f-i-l-l-w-e-l-l-s.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="fill-wells">
+      <div class="battery-bar53">
+        <div class="battery-status-bar53">
+          <div class="wifi-map-pin-ic15">
+            <img
+              class="wifi-svgrepo-com-1-115"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon15" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic15">
+            <div class="div158">96%</div>
+            <img
+              class="battery-ic-153"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line53"></div>
+      <div class="fill-wells-title-bar">
+        <div class="fill-wells-title-bar1">
+          <div class="home-previous-page-button9">
+            <button class="home-ic51" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic49"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="fill-wells1">FILL WELLS</div>
+          <div class="settings-svgrepo-com-18"></div>
+        </div>
+      </div>
+      <div class="fill-wells-div">
+        <div class="fill-wells-div1">
+          <img class="fill-wells-video-gif" src="./public/video4.gif" />
+
+          <div class="start-test-button" id="startTestBUTTON">
+            <button class="start-test">
+              <div class="start-test1">START TEST</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="loadingFilePleaseWaitDoNo"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="loading-file-please-wait-do-no1">
+        <div class="hb-variant-test-parent">
+          <b class="hb-variant-test8">Hb VARIANT TEST</b>
+          <div class="frame-child65"></div>
+          <div class="frame-wrapper38">
+            <div class="frame-parent100">
+              <div class="do-not-open-the-door-wrapper">
+                <div class="do-not-open-the-door-wrapper">
+                  <div class="do-not-open">DO NOT OPEN THE DOOR.</div>
+                </div>
+              </div>
+              <div class="do-not-open-the-door-wrapper">
+                <div class="do-not-open-the-door-wrapper">
+                  <div class="preparing-for-test">Preparing for test</div>
+                </div>
+              </div>
+              <div class="please-wait-group">
+                <div class="preparing-for-test">Please wait</div>
+                <div class="ellipse-group">
+                  <div class="frame-child66" data-animate-on-scroll></div>
+                  <div class="frame-child66" data-animate-on-scroll></div>
+                  <div class="frame-child68" data-animate-on-scroll></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./a-p-p-l-y-s-a-m-p-l-e-w-i-t-h-s-t-a-m-p-e-r.html";
+        });
+      }
+
+      var startTestBUTTON = document.getElementById("startTestBUTTON");
+      if (startTestBUTTON) {
+        startTestBUTTON.addEventListener("click", function () {
+          var popup = document.getElementById("loadingFilePleaseWaitDoNo");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.removeAttribute("closable");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+          setTimeout(function () {
+      // Redirect to a new page
+      window.location.href = "./hb-v-a-r-i-a-n-t-r-u-n-n-i-n-g.html";
+    }, 3000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.image-51-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 356px;
+  height: 504px;
+  object-fit: cover;
+}
+.covid-19-current-report {
+  width: 356px;
+  position: relative;
+  background-color: var(--color-white);
+  height: 503px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./test-result-access-2-on.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="test-result-access-2-on">
+      <div class="battery-bar135">
+        <div class="battery-status-bar135">
+          <div class="div417">96%</div>
+          <img
+            class="battery-ic-1135"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line135"></div>
+      <div class="home-title-bar226">
+        <div class="home-title-bar227">
+          <div class="home-ic-parent95">
+            <button class="home-ic133" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic115"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="test-result-access1">TEST RESULT ACCESS</div>
+          <img
+            class="settings-svgrepo-com-1-icon114"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen124">
+        <div class="frame-parent148">
+          <div class="wireless-connection-on-group">
+            <div class="wireless-connection-on12">
+              <div class="wireless-connection-on13">
+                <div class="allow-all-users2">
+                  ALLOW ALL USERS TO ACCESS ALL TEST RESULTS
+                </div>
+                <button class="toggle-button-off-frame">
+                  <button class="toggle-button-off7" id="toggleButtonOff">
+                    <div class="toggle-button-off-child5"></div>
+                  </button>
+                </button>
+              </div>
+            </div>
+            <div class="wireless-connection-on12">
+              <div class="wireless-connection-on13">
+                <div class="allow-all-users2">
+                  ALLOW ALL USERS TO SEE ONLY THE RESULTS OF PATIENTS THEY
+                  TESTED
+                </div>
+                <button class="toggle-button-on-frame">
+                  <div class="toggle-button-on19" id="toggleButtonOnContainer">
+                    <div class="toggle-button-on-child34"></div>
+                    <div class="toggle-button-on-child35"></div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="next-button86" id="nextButton">
+            <div class="done53">DONE</div>
+          </button>
+        </div>
+        <div class="div418">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var toggleButtonOff = document.getElementById("toggleButtonOff");
+      if (toggleButtonOff) {
+        toggleButtonOff.addEventListener("click", function (e) {
+          window.location.href = "./test-result-access-1-on.html";
+        });
+      }
+
+      var toggleButtonOnContainer = document.getElementById(
+        "toggleButtonOnContainer"
+      );
+      if (toggleButtonOnContainer) {
+        toggleButtonOnContainer.addEventListener("click", function (e) {
+          window.location.href = "./hotspot-wireless-connection-off.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

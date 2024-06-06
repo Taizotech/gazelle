@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./e-r-r-o-r-l-o-g.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="error-log1">
+      <div class="battery-bar100">
+        <div class="battery-status-bar100">
+          <div class="error">96%</div>
+          <img
+            class="battery-ic-1100"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line100"></div>
+      <div class="home-title-bar160">
+        <div class="home-title-bar161">
+          <div class="home-ic-parent70">
+            <button class="home-ic98" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic90"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="error-log2">ERROR LOG</div>
+          <img
+            class="settings-svgrepo-com-1-icon81"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen91">
+        <div class="frame-parent131">
+          <div class="frame-parent132">
+            <div class="error-parent">
+              <div class="error">ERROR</div>
+              <div class="frame-parent133">
+                <div class="u01-wrapper10">
+                  <div class="u0153">
+                    <div class="u01-child48"></div>
+                    <div class="error">DOOR OPEN</div>
+                  </div>
+                </div>
+                <div class="u0153">
+                  <div class="u01-child48"></div>
+                  <div class="low-battery-waring">LOW BATTERY WARING</div>
+                </div>
+              </div>
+            </div>
+            <div class="date-parent1">
+              <div class="error">DATE</div>
+              <div class="parent2">
+                <div class="error">14-09-2023 16:28:24</div>
+                <div class="error">15-09-2023 15:28:24</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button57" id="nextButton">
+            <div class="done43">DONE</div>
+          </button>
+        </div>
+        <div class="div342">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

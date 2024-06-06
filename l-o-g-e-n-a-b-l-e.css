@@ -1,0 +1,195 @@
+.battery-ic-17,
+.div12 {
+  position: relative;
+}
+.battery-ic-17 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-status-bar7 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  max-width: 768px;
+}
+.battery-bar7,
+.line7 {
+  align-self: stretch;
+  overflow: hidden;
+}
+.battery-bar7 {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+  font-size: var(--font-size-xs);
+}
+.line7 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  flex-shrink: 0;
+}
+.home-ic7,
+.left-arrow-previous-page-ic7 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic7 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-ic-parent2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.log-enable1 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon7 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar11 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar10 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+}
+.toggle-button-on-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 36px;
+  height: 18px;
+}
+.toggle-button-on-item {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  width: 14px;
+  height: 14px;
+}
+.toggle-button-on {
+  width: 36px;
+  position: relative;
+  height: 18px;
+}
+.volume-brightness-adjusment {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.keypad-tone {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 340px;
+}
+.done {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.keypad-tone-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-101xl);
+}
+.div13 {
+  width: 414px;
+  position: relative;
+  font-size: var(--font-size-xs);
+  text-align: center;
+  display: inline-block;
+}
+.body-screen6,
+.log-enable {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen6 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-mini) var(--padding-253xl);
+  gap: var(--gap-xl);
+  color: var(--color-black);
+}
+.log-enable {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

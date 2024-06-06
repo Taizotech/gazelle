@@ -1,0 +1,147 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.frame-child112,
+.hb-variant-test17 {
+  position: relative;
+}
+.frame-child112 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.do-not-open2 {
+  position: relative;
+  font-weight: 600;
+}
+.do-not-open-the-door-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.preparing-for-test2 {
+  position: relative;
+  font-weight: 500;
+}
+.frame-child113,
+.frame-child115 {
+  height: 2px;
+  width: 2px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 0;
+}
+.frame-child113.animate,
+.frame-child115.animate {
+  animation: 1s ease 0s infinite normal forwards fade-in;
+}
+.ellipse-parent6,
+.please-wait-parent5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+.please-wait-parent5 {
+  align-items: center;
+  gap: var(--gap-10xs);
+}
+.frame-parent136 {
+  flex-direction: column;
+  gap: var(--gap-7xs);
+}
+.frame-parent136,
+.frame-wrapper64,
+.hb-variant-test-parent1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper64 {
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.hb-variant-test-parent1 {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  flex-direction: column;
+  gap: var(--gap-mid);
+}
+.bottom-led-test-popup {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+@media screen and (max-width: 960px) {
+  .frame-child113,
+  .frame-child115 {
+    opacity: 0;
+  }
+  .frame-child113.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .frame-child115.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .frame-child113,
+  .frame-child115 {
+    opacity: 0;
+  }
+  .frame-child113.animate,
+  .frame-child115.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

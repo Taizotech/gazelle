@@ -1,0 +1,100 @@
+.no-covid-19-test {
+  position: relative;
+}
+.no-covid-19-test-data-popup-child {
+  align-self: stretch;
+  position: relative;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.press-continue {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.press-continue-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper28 {
+  align-self: stretch;
+  flex-direction: row;
+}
+.frame-wrapper27,
+.frame-wrapper28,
+.no-covid-19-test-data-popup-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper27 {
+  flex: 1;
+  flex-direction: column;
+}
+.no-covid-19-test-data-popup-inner {
+  align-self: stretch;
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.no-covid-19-test-data-popup2 {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 141px);
+  width: 281px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.no-covid-19-test-data-popup1 {
+  width: 320px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 274px;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 90%;
+  max-height: 90%;
+}
+.continue1 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button22 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-11xl);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.no-covid-19-test-data-popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

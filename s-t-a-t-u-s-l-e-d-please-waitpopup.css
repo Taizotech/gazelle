@@ -1,0 +1,141 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.frame-child96,
+.status-led1 {
+  position: relative;
+}
+.frame-child96 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.test-is-running2 {
+  position: relative;
+  font-weight: 500;
+}
+.test-is-running-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-child97,
+.frame-child99 {
+  height: 2px;
+  width: 2px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  opacity: 0;
+}
+.frame-child97.animate,
+.frame-child99.animate {
+  animation: 1s ease 0s infinite normal forwards fade-in;
+}
+.ellipse-parent4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+.frame-parent114,
+.please-wait-parent3,
+.status-led-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.please-wait-parent3 {
+  flex-direction: row;
+  gap: var(--gap-10xs);
+}
+.frame-parent114,
+.status-led-parent {
+  flex-direction: column;
+}
+.frame-parent114 {
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-sm);
+}
+.status-led-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  gap: var(--gap-mid);
+}
+.status-led-please-waitpopup {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+@media screen and (max-width: 960px) {
+  .frame-child97,
+  .frame-child99 {
+    opacity: 0;
+  }
+  .frame-child97.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .frame-child99.animate {
+    animation: 1s ease 0s 1 normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .frame-child97,
+  .frame-child99 {
+    opacity: 0;
+  }
+  .frame-child97.animate,
+  .frame-child99.animate {
+    animation: 1s ease 0s infinite normal forwards fade-in;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

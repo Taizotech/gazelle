@@ -1,0 +1,201 @@
+.wifi-svgrepo-com-1-120 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.map-ic-icon20 {
+  width: 19px;
+  position: relative;
+  height: 19px;
+  object-fit: cover;
+}
+.wifi-map-pin-ic20 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 41px;
+}
+.battery-ic-158,
+.div167 {
+  position: relative;
+}
+.battery-ic-158 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-percentage-ic20 {
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+}
+.battery-bar58,
+.battery-percentage-ic20,
+.battery-status-bar58 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar58 {
+  flex: 1;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.battery-bar58 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line58 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic56,
+.left-arrow-previous-page-ic54 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic54 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-previous-page-button14 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.covid-19-test-results {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.covid-19-test-results-title-ba1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.covid-19-test-results-title-ba {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.covid-19-test-results-img {
+  width: 347px;
+  position: relative;
+  height: 174.5px;
+  object-fit: cover;
+}
+.print3 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.print-button5,
+.print-button6,
+.print-button7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.print-button7 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-3xs);
+  background-color: var(--color-navajowhite);
+  width: 112px;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+.print-button5,
+.print-button6 {
+  align-items: flex-start;
+}
+.print-button5 {
+  align-self: stretch;
+}
+.covid-19-test-results-div {
+  width: 100%;
+  align-items: center;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-89xl);
+  max-width: 350px;
+}
+.body-screen52,
+.covid-19-test-result,
+.covid-19-test-results-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen52 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 727px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  padding: var(--padding-26xl) var(--padding-mini) var(--padding-61xl);
+  box-sizing: border-box;
+}
+.covid-19-test-result {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}
+.image-51-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 356px;
+  height: 504px;
+  object-fit: cover;
+}
+.covid-19-current-report {
+  width: 356px;
+  position: relative;
+  background-color: var(--color-white);
+  height: 503px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+}

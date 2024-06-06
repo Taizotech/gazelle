@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./user-settings.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="user-settings">
+      <div class="battery-bar3">
+        <div class="battery-status-bar3">
+          <div class="div5">96%</div>
+          <img
+            class="battery-ic-13"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line3"></div>
+      <div class="home-title-bar2">
+        <div class="home-title-bar3">
+          <div class="home-ic-group">
+            <button class="home-ic3" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic3"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="user-settings1">USER SETTINGS</div>
+          <img
+            class="settings-svgrepo-com-1-icon3"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen2">
+        <div class="user-settings-menu-buttons">
+          <div class="user-settings-menu-buttons1">
+            <button class="hotspot-button" id="hotspotButton">
+              <b class="hotspot">HOTSPOT</b>
+            </button>
+          </div>
+        </div>
+        <div class="div6">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./settings.html";
+        });
+      }
+
+      var hotspotButton = document.getElementById("hotspotButton");
+      if (hotspotButton) {
+        hotspotButton.addEventListener("click", function (e) {
+          window.location.href = "./hotspot-wireless-connection-off.html";
+        });
+      }
+    </script>
+  </body>
+</html>

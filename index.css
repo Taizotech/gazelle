@@ -1,0 +1,30 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.logo-tm-orange-transparent-1-icon {
+  height: 212px;
+  width: 245px;
+  position: relative;
+  object-fit: cover;
+  opacity: 1;
+}
+.logo-tm-orange-transparent-1-icon.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+}
+.splash {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 298px 0;
+  box-sizing: border-box;
+}

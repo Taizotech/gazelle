@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./hb-v-a-r-i-a-n-t-t-e-s-t-c-a-l-i-b-r-a-t-i-o-n-2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-variant-test-calibration-2">
+      <div class="battery-bar40">
+        <div class="battery-status-bar40">
+          <div class="div131">96%</div>
+          <img
+            class="battery-ic-140"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line40"></div>
+      <div class="home-title-bar76">
+        <div class="home-title-bar77">
+          <div class="home-ic-frame">
+            <button class="home-ic40" id="homeIc"></button>
+          </div>
+          <div class="hb-variant-test6">Hb VARIANT TEST CALIBRATION</div>
+          <img
+            class="settings-svgrepo-com-1-icon40"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen39">
+        <div class="body-screen-inner">
+          <div class="frame-parent97">
+            <div class="frame-wrapper33">
+              <div class="to-print-calibration-report-p-wrapper">
+                <div class="to-print-calibration-container">
+                  <span>To print calibration report, press </span>
+                  <b>Print</b>
+                  <span> button</span>
+                </div>
+              </div>
+            </div>
+            <div class="to-print-calibration-container">
+              <p class="to-upload-calibration">
+                To upload calibration report to USB drive, press
+              </p>
+              <p class="to-upload-calibration">
+                <b>TRANSFER</b>
+                <span class="button"> button</span>
+              </p>
+            </div>
+            <div class="to-print-calibration-container">
+              <p class="to-upload-calibration">
+                To start a new calibration test or exit,
+              </p>
+              <p class="to-upload-calibration">
+                <span>press </span>
+                <b class="button">BACK</b>
+                <span class="button"> button</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="edit-continue-button5">
+          <button class="continue-button13">
+            <div class="transfer">PRINT</div>
+          </button>
+          <button class="continue-button13" id="continueButton1">
+            <div class="transfer">TRANSFER</div>
+          </button>
+          <button class="continue-button13" id="continueButton2">
+            <div class="transfer">BACK</div>
+          </button>
+        </div>
+        <div class="div132">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <div id="uSBDRIVECheckingPopup" class="popup-overlay" style="display: none">
+      <div class="usb-drive-checking-popup">
+        <div class="usb-drive-parent">
+          <b class="usb-drive">USB DRIVE</b>
+          <div class="frame-child59"></div>
+          <div class="frame-wrapper34">
+            <div class="frame-wrapper35">
+              <div class="checking-usb-drive-and-prepari-wrapper">
+                <div class="checking-usb-drive-and-prepari-wrapper">
+                  <div class="checking-usb-drive">
+                    Checking USB drive and preparing data for transfer This may
+                    take a few minutes
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var continueButton1 = document.getElementById("continueButton1");
+      if (continueButton1) {
+        continueButton1.addEventListener("click", function () {
+          var popup = document.getElementById("uSBDRIVECheckingPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(141, 141, 141, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var continueButton2 = document.getElementById("continueButton2");
+      if (continueButton2) {
+        continueButton2.addEventListener("click", function (e) {
+          window.location.href =
+            "./hb-v-a-r-i-a-n-t-t-e-s-t-c-a-l-i-b-r-a-t-i-o-n-1.html";
+        });
+      }
+    </script>
+  </body>
+</html>

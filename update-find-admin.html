@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./update-find-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="update-find-admin">
+      <div class="battery-bar21">
+        <div class="battery-status-bar21">
+          <div class="div74">96%</div>
+          <img
+            class="battery-ic-121"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line21"></div>
+      <div class="home-title-bar38">
+        <div class="home-title-bar39">
+          <div class="home-ic-parent16">
+            <button class="home-ic21" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic21"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="find-admin">FIND ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon21"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen20">
+        <div class="user-credential-input-fields3">
+          <div class="select-admin-to-update-parent">
+            <div class="select-admin-to1">SELECT ADMIN TO UPDATE</div>
+            <div class="frame-parent78">
+              <div class="admin-01-ns-wrapper">
+                <div class="admin-01-ns">
+                  <div class="admin-01-ns1" id="admin01NS"></div>
+                  <div class="admin-11">Admin 1</div>
+                </div>
+              </div>
+              <div class="admin-01-ns">
+                <div class="admin-02-ns1" id="admin02NS"></div>
+                <div class="admin-11">Admin 2</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button14">
+            <div class="done10">DONE</div>
+          </button>
+        </div>
+        <div class="div75">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-admin.html";
+        });
+      }
+
+      var admin01NS = document.getElementById("admin01NS");
+      if (admin01NS) {
+        admin01NS.addEventListener("click", function (e) {
+          window.location.href = "./update-admin-1-selected.html";
+        });
+      }
+
+      var admin02NS = document.getElementById("admin02NS");
+      if (admin02NS) {
+        admin02NS.addEventListener("click", function (e) {
+          window.location.href = "./update-admin-2-selected.html";
+        });
+      }
+    </script>
+  </body>
+</html>

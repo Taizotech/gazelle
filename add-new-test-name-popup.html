@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./add-new-test-name-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="add-new-test-name-popup">
+      <div class="add-new-test-name-parent">
+        <div class="add-new-test">Add new test name</div>
+        <div class="patient-id">
+          <div class="new-test-name">NEW TEST NAME</div>
+          <input
+            class="patient-id-input-field"
+            placeholder="ENTER USER ID"
+            type="text"
+            name="yes"
+          />
+        </div>
+        <div class="edit-continue-button1">
+          <button class="continue-button4" id="popupcontinueButton">
+            <div class="accept">Accept</div>
+          </button>
+          <button class="continue-button4" id="popupcontinueButton1">
+            <div class="accept">Cancel</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var popupcontinueButton = document.getElementById("popupcontinueButton");
+      if (popupcontinueButton) {
+        popupcontinueButton.addEventListener("click", function (e) {
+          window.location.href = "./c-a-m-e-r-a-s-e-t-t-i-n-g-s.html";
+        });
+      }
+
+      var popupcontinueButton1 = document.getElementById("popupcontinueButton1");
+      if (popupcontinueButton1) {
+        popupcontinueButton1.addEventListener("click", function (e) {
+          window.location.href = "./c-a-m-e-r-a-s-e-t-t-i-n-g-s.html";
+        });
+      }
+    </script>
+  </body>
+</html>

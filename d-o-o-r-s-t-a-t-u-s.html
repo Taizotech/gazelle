@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./d-o-o-r-s-t-a-t-u-s.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="door-status1">
+      <div class="battery-bar90">
+        <div class="battery-status-bar90">
+          <div class="wifi-map-pin-ic33">
+            <img
+              class="wifi-svgrepo-com-1-133"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon33" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic33">
+            <div class="div309">96%</div>
+            <img
+              class="battery-ic-190"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line90"></div>
+      <div class="home-title-bar140">
+        <div class="home-title-bar141">
+          <div class="home-ic-parent60">
+            <button class="home-ic88" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic80"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="door-status2">DOOR STATUS</div>
+          <img
+            class="settings-svgrepo-com-1-icon71"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen81">
+        <div class="hb-variant-running3">
+          <div class="hb-variant-running-div8">
+            <div class="user-id-password-input-field">
+              <div class="patient-info-details2">
+                <div class="patient-id11">
+                  <div class="door-closed">DOOR STATUS</div>
+                  <div class="door-closed">Door Closed</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="start-test-button-container">
+            <div class="start-test-button14">
+              <button class="start-test-button15">
+                <div class="start-test-button16">CHECK DOOR STATUS</div>
+              </button>
+            </div>
+            <div class="start-test-button14">
+              <button class="start-test-button15" id="startTestButton1">
+                <div class="start-test-button16">DONE</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="div310">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+
+      var startTestButton1 = document.getElementById("startTestButton1");
+      if (startTestButton1) {
+        startTestButton1.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+    </script>
+  </body>
+</html>

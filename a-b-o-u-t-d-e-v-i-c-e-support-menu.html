@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./a-b-o-u-t-d-e-v-i-c-e-support-menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="about-device-support-menu">
+      <div class="battery-bar81">
+        <div class="battery-status-bar81">
+          <div class="div220">96%</div>
+          <img
+            class="battery-ic-181"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line81"></div>
+      <div class="home-title-bar128">
+        <div class="home-title-bar129">
+          <div class="home-ic-parent56">
+            <button class="home-ic79" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic76"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="about-device4">ABOUT DEVICE</div>
+          <img
+            class="settings-svgrepo-com-1-icon65"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen75">
+        <div class="user-credential-input-fields30">
+          <div class="confirm-patient-info-card3">
+            <div class="patient-info-details1">
+              <div class="patient-id10">
+                <div class="device-serial-no1">DEVICE SERIAL NO</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">6Z1000001803</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">DEVICE MAC ID</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">60:8A:10:E9:BE:A6</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">PRODUCED BY</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">User</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">DEVICE VERSION</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">10.04.02</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">IP ADDRESS</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">192.168.0.39</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">Hb LIB VERSION</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">4.0.5</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">COVID-19 LIB VERSION</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">2.2.0</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">SETTING VERSION</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">2.8</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">BATTERY SETTING VERSION</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">3.0</div>
+              </div>
+              <div class="patient-id10">
+                <div class="device-serial-no1">BATTERY UPDATE</div>
+                <div class="div221">:</div>
+                <div class="device-serial-no1">6</div>
+              </div>
+            </div>
+            <img class="image-7-icon1" alt="" src="./public/image-7@2x.png" />
+
+            <div class="div238">2664</div>
+          </div>
+        </div>
+        <button class="done-button9" id="doneButton">
+          <div class="done35">DONE</div>
+        </button>
+        <div class="div239">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var doneButton = document.getElementById("doneButton");
+      if (doneButton) {
+        doneButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

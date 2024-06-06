@@ -1,0 +1,17 @@
+.image-17-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 355px;
+  height: 503px;
+  object-fit: cover;
+}
+.new-report {
+  width: 356px;
+  position: relative;
+  background-color: var(--color-white);
+  height: 503px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+}

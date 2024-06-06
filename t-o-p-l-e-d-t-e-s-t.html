@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./t-o-p-l-e-d-t-e-s-t.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="top-led-test1">
+      <div class="battery-bar93">
+        <div class="battery-status-bar93">
+          <div class="wifi-map-pin-ic36">
+            <img
+              class="wifi-svgrepo-com-1-136"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon36" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic36">
+            <div class="div315">96%</div>
+            <img
+              class="battery-ic-193"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line93"></div>
+      <div class="home-title-bar146">
+        <div class="home-title-bar147">
+          <div class="home-ic-parent63">
+            <button class="home-ic91" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic83"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="top-led-test2">TOP LED TEST</div>
+          <img
+            class="settings-svgrepo-com-1-icon74"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen84">
+        <div class="hb-variant-running-div9">
+          <div class="user-id-password-input-field2">
+            <div class="patient-info-details4">
+              <div class="patient-id13">
+                <div class="top-led-test3">TOP LED TEST</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent115">
+          <div class="start-test-button-wrapper">
+            <button class="start-test-button23" id="startTestButton">
+              <div class="start-test-button24">NEXT</div>
+            </button>
+          </div>
+          <div class="div316">14:24 15/11/2023</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="topLEDTestPopup" class="popup-overlay" style="display: none">
+      <div class="top-led-test-popup">
+        <div class="hb-variant-test-container">
+          <b class="hb-variant-test16">Hb VARIANT TEST</b>
+          <div class="frame-child108"></div>
+          <div class="frame-wrapper61">
+            <div class="frame-parent134">
+              <div class="do-not-open-the-door-container">
+                <div class="do-not-open-the-door-container">
+                  <div class="do-not-open1">DO NOT OPEN THE DOOR.</div>
+                </div>
+              </div>
+              <div class="do-not-open-the-door-container">
+                <div class="do-not-open-the-door-container">
+                  <div class="preparing-for-test1">Preparing for test</div>
+                </div>
+              </div>
+              <div class="please-wait-parent4">
+                <div class="preparing-for-test1">Please wait</div>
+                <div class="ellipse-parent5">
+                  <div class="frame-child109" data-animate-on-scroll></div>
+                  <div class="frame-child109" data-animate-on-scroll></div>
+                  <div class="frame-child111" data-animate-on-scroll></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+
+      var startTestButton = document.getElementById("startTestButton");
+      if (startTestButton) {
+        startTestButton.addEventListener("click", function () {
+          var popup = document.getElementById("topLEDTestPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(185, 185, 185, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+          setTimeout(function () {
+        window.location.href = "./hb-t-o-p-l-e-d-t-e-s-t-r-u-n-n-i-n-g-u-v.html";
+      }, 3000);
+        });
+      }
+    </script>
+  </body>
+</html>

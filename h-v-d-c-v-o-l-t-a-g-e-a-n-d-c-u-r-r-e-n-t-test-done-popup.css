@@ -1,0 +1,50 @@
+.frame-child87,
+.hvdc-voltage-and {
+  position: relative;
+}
+.frame-child87 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.voltage-247605 {
+  position: relative;
+  font-weight: 500;
+}
+.frame-parent109,
+.hvdc-voltage-and-current-parent,
+.voltage-247605-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-parent109,
+.hvdc-voltage-and-current-parent {
+  flex-direction: column;
+}
+.frame-parent109 {
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-sm);
+}
+.hvdc-voltage-and-current-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  gap: var(--gap-mid);
+}
+.hvdc-voltage-and-current-test {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

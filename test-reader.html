@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./test-reader.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+    
+    <style>
+      .d-none{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="test-reader1">
+      <div class="battery-bar76">
+        <div class="battery-status-bar76">
+          <div class="wifi-map-pin-ic29">
+            <img
+              class="wifi-svgrepo-com-1-129"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon29" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic29">
+            <div class="div210">96%</div>
+            <img
+              class="battery-ic-176"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line76"></div>
+      <div class="home-title-bar118">
+        <div class="home-title-bar119">
+          <div class="home-ic-parent51">
+            <button class="home-ic74" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic71"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="test-reader2">TEST READER</div>
+          <img
+            class="settings-svgrepo-com-1-icon60"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen70">
+        <div class="help-menu-buttons-parent9">
+          <div class="help-menu-buttons37">
+            <button class="support-button36" id="supportButton">
+              <b class="pcb-version">PCB VERSION</b>
+            </button>
+            <button class="user-manual-button22" id="userManualButton">
+              <b class="pcb-version">CAMERA TEST</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button37" id="supportButton1">
+              <b class="pcb-version">HVDC TEST</b>
+            </button>
+            <button class="user-manual-button23" id="userManualButton1">
+              <b class="pcb-version">RUN ALL TESTS</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button38" id="supportButton2">
+              <b class="pcb-version">HVDC VOLTAGE</b>
+            </button>
+            <button class="user-manual-button24" id="userManualButton2">
+              <b class="pcb-version">CAMERA FOCUS SCD</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button39" id="supportButton3">
+              <b class="pcb-version">WHITE BALACE SCD</b>
+            </button>
+            <button class="user-manual-button25" id="userManualButton3">
+              <b class="pcb-version">SCD BACKLIT</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button40" id="supportButton4">
+              <b class="pcb-version">STATUS LED</b>
+            </button>
+            <button class="user-manual-button26" id="userManualButton4">
+              <b class="pcb-version">DEVICE REGISTRATION</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button41" id="supportButton5">
+              <b class="pcb-version">DOOR STATUS</b>
+            </button>
+            <button class="user-manual-button27" id="userManualButton5">
+              <b class="pcb-version">SAMPLE TEST</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button42" id="supportButton6">
+              <b class="pcb-version">TOP LED TEST</b>
+            </button>
+            <button class="user-manual-button28" id="userManualButton6">
+              <b class="pcb-version">BOTTOM LED BOARD TEST</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons37">
+            <button class="support-button43" id="supportButton7">
+              <b class="pcb-version">QR COORDINATE</b>
+            </button>
+            <button class="user-manual-button29" id="userManualButton7">
+              <b class="pcb-version">COVID FOCUS</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons-parent10">
+            <div class="help-menu-buttons45" id="helpMenuButtonsContainer">
+              <button class="support-button44" id="supportButton8">
+                <b class="pcb-version">COVID WHITE BALANCE</b>
+              </button>
+            </div>
+            <div class="help-menu-buttons46">
+              <button class="support-button45" id="supportButton9">
+                <b class="pcb-version">Hb VARIANT LOOP TEST</b>
+              </button>
+            </div>
+          </div>
+          <div class="help-menu-buttons-parent10">
+            <div class="help-menu-buttons46">
+              <button class="support-button46" id="supportButton10">
+                <b class="pcb-version">COVID-19 LOOP TEST</b>
+              </button>
+            </div>
+            <div class="support-button47"></div>
+          </div>
+        </div>
+        <div class="div211">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <div
+      id="pCBVERSIONSuccessfulPopup"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="pcb-version-successful">
+        <div class="pcb-version-parent">
+          <b class="pcb-version1">PCB VERSION</b>
+          <div class="frame-child71"></div>
+          <div class="frame-wrapper45">
+            <div class="successful-wrapper">
+              <div class="successful">Successful</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cAMERATESTTestRunning" class="popup-overlay" style="display: none">
+      <div class="camera-test-test-running">
+        <div class="camera-test-parent">
+          <b class="camera-test1">CAMERA TEST</b>
+          <div class="frame-child72"></div>
+          <div class="frame-parent108">
+            <div class="test-is-running-wrapper">
+              <div class="test-is-running-wrapper">
+                <div class="test-is-running">Test is running</div>
+              </div>
+            </div>
+            <div class="test-sucessfull d-none">Sucessfull</div>
+            <div class="test-is-running-wrapper">
+              <div class="please-wait-container">
+                <div class="test-is-running">Please wait</div>
+                <div class="ellipse-container">
+                  <div class="frame-child73" data-animate-on-scroll></div>
+                  <div class="frame-child73" data-animate-on-scroll></div>
+                  <div class="frame-child75" data-animate-on-scroll></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="hVDCSELFTESTSuccessful"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="hvdc-self-test-successful">
+        <div class="hvdc-self-test-parent">
+          <b class="hvdc-self-test">HVDC SELF TEST</b>
+          <div class="frame-child77"></div>
+          <div class="frame-wrapper50">
+            <div class="successful-frame">
+              <div class="successful-frame">
+                <div class="successful2">Successful</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="rUNALLTESTSSuccessful" class="popup-overlay" style="display: none">
+      <div class="run-all-tests-successful">
+        <div class="run-all-tests-parent">
+          <b class="run-all-tests1">RUN ALL TESTS</b>
+          <div class="frame-child82"></div>
+          <div class="frame-wrapper52">
+            <div class="frame-wrapper53">
+              <div class="frame-wrapper53">
+                <div class="successful3">Successful</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="startingTestPleaseWait"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="starting-test-please-wait">
+        <div class="starting-test-parent">
+          <b class="starting-test">STARTING TEST</b>
+          <div class="frame-child83"></div>
+          <div class="please-wait-parent1">
+            <div class="please-wait3">Please wait</div>
+            <div class="ellipse-parent2">
+              <div class="frame-child84" data-animate-on-scroll></div>
+              <div class="frame-child84" data-animate-on-scroll></div>
+              <div class="frame-child86" data-animate-on-scroll></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="sCDBACKLIGHTPleaseWaitp"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="scd-back-light-please-waitp">
+        <div class="scd-back-light-parent">
+          <b class="scd-back-light">SCD BACK LIGHT</b>
+          <div class="frame-child92"></div>
+          <div class="frame-parent113">
+            <div class="test-is-running-container">
+              <div class="test-is-running-container">
+                <div class="test-is-running1">Test is running</div>
+              </div>
+            </div>
+           
+            <div class="test-is-running-container">
+              <div class="please-wait-parent2">
+                <div class="test-is-running1" id="test-is-runni">Please wait</div>
+                <div class="ellipse-parent3">
+                  <div class="frame-child93" data-animate-on-scroll></div>
+                  <div class="frame-child93" data-animate-on-scroll></div>
+                  <div class="frame-child95" data-animate-on-scroll></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="sTATUSLEDPleaseWaitpopup"
+      class="popup-overlay"
+      style="display: none"
+    >
+      <div class="status-led-please-waitpopup">
+        <div class="status-led-parent">
+          <b class="status-led1">STATUS LED</b>
+          <div class="frame-child96"></div>
+          <div class="frame-parent114">
+            <div class="test-is-running-frame">
+              <div class="test-is-running-frame">
+                <div class="test-is-running2">Test is running</div>
+              </div>
+            </div>
+            <div class="test-is-running-frame">
+              <div class="please-wait-parent3">
+                <div class="test-is-running2">Please wait</div>
+                <div class="ellipse-parent4">
+                  <div class="frame-child97" data-animate-on-scroll></div>
+                  <div class="frame-child97" data-animate-on-scroll></div>
+                  <div class="frame-child99" data-animate-on-scroll></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+     
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./s-u-p-p-o-r-t.html";
+        });
+      }
+
+      var supportButton = document.getElementById("supportButton");
+      if (supportButton) {
+        supportButton.addEventListener("click", function () {
+          var popup = document.getElementById("pCBVERSIONSuccessfulPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(170, 170, 170, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var userManualButton = document.getElementById("userManualButton");
+      if (userManualButton) {
+        userManualButton.addEventListener("click", function () {
+          var popup = document.getElementById("cAMERATESTTestRunning");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(167, 167, 167, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+
+          setTimeout(()=>{
+            $(".test-sucessfull").removeClass("d-none");
+            $(".test-is-running").addClass("d-none");
+            
+            setTimeout(()=>{
+              window.location.reload()},1000)
+          },3000)
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var supportButton1 = document.getElementById("supportButton1");
+      if (supportButton1) {
+        supportButton1.addEventListener("click", function () {
+          var popup = document.getElementById("hVDCSELFTESTSuccessful");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(179, 179, 179, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var userManualButton1 = document.getElementById("userManualButton1");
+      if (userManualButton1) {
+        userManualButton1.addEventListener("click", function () {
+          var popup = document.getElementById("rUNALLTESTSSuccessful");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(190, 190, 190, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var supportButton2 = document.getElementById("supportButton2");
+      if (supportButton2) {
+        supportButton2.addEventListener("click", function () {
+          var popup = document.getElementById("startingTestPleaseWait");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(190, 190, 190, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+          setTimeout(function () {
+        window.location.href = "./hb-v-a-r-i-a-n-t-r-u-n-n-i-n-g-f-o-r-h-v-d-c-v-o-l-t-a-g-e-a-n-d-c-u-r-r-e-n-t-c-h-e-c-k-i-n-g.html";
+      }, 3000);
+        });
+      }
+
+      var userManualButton2 = document.getElementById("userManualButton2");
+      if (userManualButton2) {
+        userManualButton2.addEventListener("click", function (e) {
+          window.location.href = "./c-a-m-e-r-a-f-o-c-u-s-s-c-d-c-h-e-c-k.html";
+        });
+      }
+
+      var supportButton3 = document.getElementById("supportButton3");
+      if (supportButton3) {
+        supportButton3.addEventListener("click", function (e) {
+          window.location.href =
+            "./c-a-m-e-r-a-w-h-i-t-e-b-a-l-a-n-c-e-s-c-d-c-h-e-c-k.html";
+        });
+      }
+
+      var userManualButton3 = document.getElementById("userManualButton3");
+      if (userManualButton3) {
+        userManualButton3.addEventListener("click", function () {
+          var popup = document.getElementById("sCDBACKLIGHTPleaseWaitp");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(181, 181, 181, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var supportButton4 = document.getElementById("supportButton4");
+      if (supportButton4) {
+        supportButton4.addEventListener("click", function () {
+          var popup = document.getElementById("sTATUSLEDPleaseWaitpopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(183, 183, 183, 0.75)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var userManualButton4 = document.getElementById("userManualButton4");
+      if (userManualButton4) {
+        userManualButton4.addEventListener("click", function (e) {
+          window.location.href = "./d-e-v-i-c-e-r-e-g-i-s-t-r-a-t-i-o-n.html";
+        });
+      }
+
+      var supportButton5 = document.getElementById("supportButton5");
+      if (supportButton5) {
+        supportButton5.addEventListener("click", function (e) {
+          window.location.href = "./d-o-o-r-s-t-a-t-u-s.html";
+        });
+      }
+
+      var userManualButton5 = document.getElementById("userManualButton5");
+      if (userManualButton5) {
+        userManualButton5.addEventListener("click", function (e) {
+          window.location.href = "./s-e-l-e-c-t-s-a-m-p-l-e-t-e-s-t.html";
+        });
+      }
+
+      var supportButton6 = document.getElementById("supportButton6");
+      if (supportButton6) {
+        supportButton6.addEventListener("click", function (e) {
+          window.location.href = "./t-o-p-l-e-d-t-e-s-t.html";
+        });
+      }
+
+      var userManualButton6 = document.getElementById("userManualButton6");
+      if (userManualButton6) {
+        userManualButton6.addEventListener("click", function (e) {
+          window.location.href = "./b-o-t-t-o-m-l-e-d-t-e-s-t.html";
+        });
+      }
+
+      var supportButton7 = document.getElementById("supportButton7");
+      if (supportButton7) {
+        supportButton7.addEventListener("click", function (e) {
+          window.location.href =
+            "./q-r-c-o-o-r-d-i-n-a-t-e-s-e-l-e-c-t-c-a-r-t-r-i-d-g-e.html";
+        });
+      }
+
+      var userManualButton7 = document.getElementById("userManualButton7");
+      if (userManualButton7) {
+        userManualButton7.addEventListener("click", function (e) {
+          window.location.href = "./covid-c-a-m-e-r-a-f-o-c-u-s-s-c-d-c-h-e-c-k.html";
+        });
+      }
+
+      var supportButton8 = document.getElementById("supportButton8");
+      if (supportButton8) {
+        supportButton8.addEventListener("click", function (e) {
+          window.location.href =
+            "./covid-c-a-m-e-r-a-w-h-i-t-e-b-a-l-a-n-c-e-s-c-d-c-h-e-c-k.html";
+        });
+      }
+
+      var helpMenuButtonsContainer = document.getElementById(
+        "helpMenuButtonsContainer"
+      );
+      if (helpMenuButtonsContainer) {
+        helpMenuButtonsContainer.addEventListener("click", function (e) {
+          window.location.href =
+            "./covid-c-a-m-e-r-a-w-h-i-t-e-b-a-l-a-n-c-e-s-c-d-c-h-e-c-k.html";
+        });
+      }
+
+      var supportButton9 = document.getElementById("supportButton9");
+      if (supportButton9) {
+        supportButton9.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-a.html";
+        });
+      }
+
+      var supportButton10 = document.getElementById("supportButton10");
+      if (supportButton10) {
+        supportButton10.addEventListener("click", function (e) {
+          window.location.href = "./covid-19-p-r-e-p-a-r-e-s-a-m-p-l-e.html";
+        });
+      }
+      var startingTestPopup = document.getElementById("startingTestPleaseWait");
+  if (startingTestPopup) {
+    var startingTestContent = startingTestPopup.querySelector("#test-is-runni");
+    var startingTestEllipseParent = startingTestPopup.querySelector(".ellipse-parent2");
+
+    if (startingTestContent && startingTestEllipseParent) {
+      // Function to change content to "Successful"
+      function changeToSuccessful() {
+        startingTestContent.innerText = "Successful";
+        startingTestEllipseParent.style.display = "none";
+        // You can also add additional actions if needed
+      }
+
+      // Set a timeout to change the content after 3 seconds
+      setTimeout(changeToSuccessful, 1000);
+    }
+  }
+    </script>
+
+  </body>
+</html>

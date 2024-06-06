@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./d-e-l-e-t-e-t-e-s-t-d-a-t-a-3-test-id.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="delete-test-data-3-test-id">
+      <div class="battery-bar34">
+        <div class="battery-status-bar34">
+          <div class="div100">96%</div>
+          <img
+            class="battery-ic-134"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line34"></div>
+      <div class="home-title-bar64">
+        <div class="home-title-bar65">
+          <div class="home-ic-parent29">
+            <button class="home-ic34" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic34"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="delete-test-data4">DELETE TEST DATA</div>
+          <img
+            class="settings-svgrepo-com-1-icon34"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen33">
+        <div class="user-credential-input-fields14">
+          <div class="select-test-data-to-delete-parent1">
+            <div class="select-test-data3">SELECT TEST DATA TO DELETE</div>
+            <div class="frame-parent92">
+              <div class="admin-01-ns-delete-wrapper2">
+                <div class="admin-01-ns-delete8" id="admin01NSDeleteContainer">
+                  <div class="admin-01-ns-delete9" id="admin01NSDelete"></div>
+                  <div class="div100">Hb Variant Test Data</div>
+                </div>
+              </div>
+              <div class="covid-19-test-data-ns4">
+                <div
+                  class="covid-19-test-data-ns5"
+                  id="covid19TestDataNs"
+                ></div>
+                <div class="covid-19-test-data3">Covid-19 Test Data</div>
+              </div>
+              <div class="covid-19-test-data-ns4">
+                <div class="admin-02-ns-delete9" id="admin02NSDelete"></div>
+                <div class="covid-19-test-data3">Delete Data by Test ID</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button21" id="nextButton">
+            <div class="next8">NEXT</div>
+          </button>
+        </div>
+        <div class="div101">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./m-e-m-o-r-y-m-a-n-a-g-e-m-e-n-t.html";
+        });
+      }
+
+      var admin01NSDelete = document.getElementById("admin01NSDelete");
+      if (admin01NSDelete) {
+        admin01NSDelete.addEventListener("click", function (e) {
+          window.location.href = "./d-e-l-e-t-e-t-e-s-t-d-a-t-a-1-hb.html";
+        });
+      }
+
+      var admin01NSDeleteContainer = document.getElementById(
+        "admin01NSDeleteContainer"
+      );
+      if (admin01NSDeleteContainer) {
+        admin01NSDeleteContainer.addEventListener("click", function (e) {
+          window.location.href = "./delete-user1.html";
+        });
+      }
+
+      var covid19TestDataNs = document.getElementById("covid19TestDataNs");
+      if (covid19TestDataNs) {
+        covid19TestDataNs.addEventListener("click", function (e) {
+          window.location.href = "./d-e-l-e-t-e-t-e-s-t-d-a-t-a-2-covid.html";
+        });
+      }
+
+      var admin02NSDelete = document.getElementById("admin02NSDelete");
+      if (admin02NSDelete) {
+        admin02NSDelete.addEventListener("click", function (e) {
+          window.location.href = "./delete-admin-2-selected.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./d-e-l-e-t-e-d-a-t-a-b-y-t-e-s-t-i-d.html";
+        });
+      }
+    </script>
+  </body>
+</html>

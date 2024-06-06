@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./m-e-m-o-r-y-m-a-n-a-g-e-m-e-n-t.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="memory-management">
+      <div class="battery-bar28">
+        <div class="battery-status-bar28">
+          <div class="select-method-for">96%</div>
+          <img
+            class="battery-ic-128"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line28"></div>
+      <div class="home-title-bar52">
+        <div class="home-title-bar53">
+          <div class="home-ic-parent23">
+            <button class="home-ic28" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic28"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="memory-management1">MEMORY MANAGEMENT</div>
+          <img
+            class="settings-svgrepo-com-1-icon28"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen27">
+        <div class="user-credential-input-fields8">
+          <div class="select-method-for-freeing-up-m-parent">
+            <div class="select-method-for">
+              SELECT METHOD FOR FREEING UP MEMORY
+            </div>
+            <div class="frame-parent83">
+              <div class="frame-wrapper15">
+                <div class="frame-wrapper16">
+                  <div class="u02-wrapper">
+                    <div class="manually-select-radio">
+                      <div class="u02-child" id="ellipse"></div>
+                      <div class="select-method-for">
+                        AUTOMATICALLY OVERWRITE TESTS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-wrapper15">
+                <div class="frame-wrapper16">
+                  <div class="u02-wrapper">
+                    <div class="manually-select-radio">
+                      <div class="u02-child" id="manuallySelectRadio"></div>
+                      <div class="select-method-for">
+                        MANUALLY SELECT TESTS TO DELETE
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group-parent">
+              <img
+                class="group-icon"
+                alt=""
+                src="./public/group-2@2x.png"
+                data-animate-on-scroll
+              />
+
+              <div class="frame-parent84">
+                <div class="rectangle-parent18">
+                  <div class="frame-child50"></div>
+                  <div class="select-method-for">22% (3 GB OF 15 GB) Used</div>
+                </div>
+                <div class="rectangle-parent18">
+                  <div class="frame-child51"></div>
+                  <div class="select-method-for">78% (12 GB OF 15 GB) Free</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="done-button3">
+          <div class="next2">NEXT</div>
+        </button>
+        <div class="div89">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-e-m-o-r-y-m-a-n-a-g-e-m-e-n-t-1-radio-select.html";
+        });
+      }
+
+      var manuallySelectRadio = document.getElementById("manuallySelectRadio");
+      if (manuallySelectRadio) {
+        manuallySelectRadio.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-e-m-o-r-y-m-a-n-a-g-e-m-e-n-t-2-radio-select.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

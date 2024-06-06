@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./review-patient-loading-file-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="review-patient-loading-file-po">
+      <div class="battery-bar124">
+        <div class="battery-status-bar124">
+          <div class="div390">96%</div>
+          <img
+            class="battery-ic-1124"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line124"></div>
+      <div class="home-title-bar204">
+        <div class="home-title-bar205">
+          <div class="home-ic-parent84">
+            <button class="home-ic122" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic104"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="review-patient8">REVIEW PATIENT</div>
+          <img
+            class="settings-svgrepo-com-1-icon103"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen113">
+        <div class="user-credential-input-fields37">
+          <div class="select-patient-type-to-review-parent1">
+            <div class="select-patient-type4">
+              SELECT PATIENT TYPE TO REVIEW
+            </div>
+            <div class="frame-parent141">
+              <div class="u01-wrapper13">
+                <div class="u0159">
+                  <div class="u01-child54"></div>
+                  <div class="hb-variant9">Hb Variant</div>
+                </div>
+              </div>
+              <div class="u0159">
+                <div class="u01-child55" id="ellipse"></div>
+                <div class="hb-variant9">Covid-19</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button71">
+            <div class="done49">DONE</div>
+          </button>
+        </div>
+        <div class="div391">14:24 15/11/2023</div>
+      </div>
+      <div class="review-patient-loading-file-po-child"></div>
+      <div class="loading-file-please-wait-do-no9">
+        <div class="loading-file-group">
+          <b class="div390">LOADING FILE</b>
+          <div class="frame-child122"></div>
+          <div class="frame-wrapper85">
+            <div class="please-wait-parent6">
+              <div class="please-wait8">Please wait</div>
+              <div class="ellipse-parent7">
+                <div class="frame-child123" data-animate-on-scroll></div>
+                <div class="frame-child123" data-animate-on-scroll></div>
+                <div class="frame-child125" data-animate-on-scroll></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-user.html";
+        });
+      }
+
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href = "./delete-user2.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

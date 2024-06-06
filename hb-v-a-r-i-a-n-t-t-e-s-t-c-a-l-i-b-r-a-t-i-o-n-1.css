@@ -1,0 +1,203 @@
+.battery-ic-139 {
+  width: 30px;
+  position: relative;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-status-bar39 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  max-width: 768px;
+}
+.battery-bar39,
+.line39 {
+  align-self: stretch;
+  overflow: hidden;
+}
+.battery-bar39 {
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line39 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  flex-shrink: 0;
+}
+.home-ic39 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.home-ic-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 56px;
+}
+.hb-variant-test5 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon39 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar75 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar74 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.last-calibration-result {
+  position: relative;
+}
+.frame-parent96,
+.last-calibration-result-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.last-calibration-result-parent {
+  flex-direction: column;
+  gap: var(--gap-smi);
+}
+.frame-parent96 {
+  flex-direction: row;
+  gap: 44px;
+}
+.calibration-successfully-compl {
+  margin: 0;
+}
+.frame-parent95 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.frame-child58 {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--color-black);
+  height: 1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.press-start-button-container {
+  align-self: stretch;
+  position: relative;
+  text-align: center;
+}
+.frame-parent94 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 320px;
+}
+.continue-button10 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-xl);
+  background-color: var(--color-navajowhite);
+  width: 145px;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.pdf-report {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: center;
+}
+.edit-continue-button4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 320px;
+}
+.div130 {
+  width: 100%;
+  position: relative;
+  font-size: var(--font-size-xs);
+  text-align: center;
+  display: inline-block;
+  max-width: 320px;
+}
+.body-screen38,
+.hb-variant-test-calibration-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen38 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-11xl) var(--padding-mini) var(--padding-101xl);
+  gap: var(--gap-11xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.hb-variant-test-calibration-1 {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

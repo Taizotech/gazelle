@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./c-a-m-e-r-a-s-e-t-t-i-n-g-s.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="camera-settings">
+      <div class="battery-bar15">
+        <div class="battery-status-bar15">
+          <div class="div34">96%</div>
+          <img
+            class="battery-ic-115"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line15"></div>
+      <div class="home-title-bar26">
+        <div class="home-title-bar27">
+          <div class="home-ic-parent10">
+            <button class="home-ic15" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic15"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="camera-settings1">CAMERA SETTINGS</div>
+          <img
+            class="settings-svgrepo-com-1-icon15"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen14">
+        <div class="hb-variant-running-video-gif-parent">
+          <img class="hb-variant-running-video-gif" src="./public/video5.gif" />
+
+          <div class="confirm-patient-info">
+            <div class="frame-parent10">
+              <div class="frame-parent11">
+                <select class="hb-variant-parent">
+                  <option value="s">Hb Variant</option>
+                  <option value="s">Covid 19</option>
+                </select>
+                <div class="add-new-wrapper" id="frameContainer">
+                  <div class="add-new">Add New</div>
+                </div>
+              </div>
+              <div class="frame-parent12">
+                <div class="frame-parent13">
+                  <div class="rectangle-parent2">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="v-flip">V-Flip</div>
+                  </div>
+                  <div class="rectangle-parent2">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="v-flip">H-Mirror</div>
+                  </div>
+                </div>
+                <div class="frame-size-wrapper" id="frameContainer1">
+                  <div class="frame-size">FRAME SIZE</div>
+                </div>
+              </div>
+              <div class="frame-parent14">
+                <div class="light-source-parent">
+                  <div class="light-source">Light source</div>
+                  <div class="frame-parent15">
+                    <select class="top-white-parent">
+                      <option value="s">Top white</option>
+                      <option value="s">Top UV</option>
+                      <option value="s">Top Red</option>
+                      <option value="s">Top Green</option>
+                      <option value="s">Top Blue</option>
+                      <option value="s">Top Black</option>
+                      <option value="s">Bottom White</option>
+                      <option value="s">Bottom UV</option>
+                      <option value="s">Bottom Green</option>
+                      <option value="s">Bottom Black</option>
+                    </select>
+                    <div class="intensity-0-parent">
+                      <div class="sharpness">Intensity 0%</div>
+                      <div class="frame-wrapper">
+                        <div class="frame-parent16">
+                          <div class="frame-child8"></div>
+                          <img
+                            class="rectangle-icon"
+                            alt=""
+                            src="./public/rectangle-49.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brightness-parent">
+                  <div class="light-source">Brightness</div>
+                  <div class="frame-parent17"id="imageContainer">
+                    <div class="frame-parent16" id="dragContainer">
+                      <div class="frame-child8"></div>
+                      <img
+                        class="rectangle-icon"
+                        alt=""
+                        src="./public/rectangle-49.svg"
+                        id="movableImage"
+                      />
+                    </div>
+                    <div class="wrapper">
+                      <div class="div35" id="brightness0">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brightness-parent">
+                  <div class="light-source">Contrast</div>
+                  <div class="frame-parent19" id="contrastContainer">
+                    <div class="frame-wrapper1">
+                      <div class="frame-wrapper2">
+                        <div class="frame-child11"></div>
+                      </div>
+                    </div>
+                    <img
+                      class="frame-child12"
+                      alt=""
+                      src="./public/rectangle-58.svg"
+                      id="movableContrastImage"
+                    />
+
+                    <div class="container">
+                      <div class="div36" id="Contrast0">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="saturation-parent">
+                  <div class="light-source">Saturation</div>
+                  <div class="frame-parent17" id="saturationContainer">
+                    <div class="frame-wrapper3">
+                      <div class="frame-parent21">
+                        <div class="frame-child8"></div>
+                        <img
+                          class="frame-child14"
+                          alt=""
+                          src="./public/rectangle-581.svg"
+                          id="movableSaturationImage"
+                        />
+                      </div>
+                    </div>
+                    <div class="wrapper">
+                      <div class="div36">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brightness-parent">
+                  <div class="sharpness">Sharpness</div>
+                  <div class="frame-parent17">
+                    <div class="frame-parent23">
+                      <div class="frame-wrapper4">
+                        <div class="frame-child11"></div>
+                      </div>
+                      <img
+                        class="frame-child16"
+                        alt=""
+                        src="./public/rectangle-581.svg"
+                      />
+                    </div>
+                    <div class="wrapper">
+                      <div class="div36">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-parent24">
+                <div class="rectangle-parent4">
+                  <input class="rectangle-input" type="checkbox" />
+
+                  <div class="denoise-auto">Denoise auto</div>
+                </div>
+                <div class="frame-parent14">
+                  <div class="brightness-parent">
+                    <div class="light-source">Denoise</div>
+                    <div class="frame-parent17">
+                      <div class="frame-parent23">
+                        <div class="frame-wrapper4">
+                          <div class="frame-child11"></div>
+                        </div>
+                        <img
+                          class="frame-child18"
+                          alt=""
+                          src="./public/rectangle-581.svg"
+                        />
+                      </div>
+                      <div class="wrapper">
+                        <div class="div36">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="brightness-parent">
+                    <div class="light-source">ae level</div>
+                    <div class="frame-parent17">
+                      <div class="frame-parent23">
+                        <div class="frame-wrapper4">
+                          <div class="frame-child11"></div>
+                        </div>
+                        <img
+                          class="frame-child18"
+                          alt=""
+                          src="./public/rectangle-581.svg"
+                        />
+                      </div>
+                      <div class="wrapper">
+                        <div class="div36">0</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="brightness-parent">
+                    <div class="light-source">gainceiling</div>
+                    <div class="frame-parent17">
+                      <div class="frame-parent31">
+                        <div class="rectangle-wrapper">
+                          <div class="frame-child21"></div>
+                        </div>
+                        <div class="frame-parent21">
+                          <div class="frame-child8"></div>
+                          <img
+                            class="frame-child23"
+                            alt=""
+                            src="./public/rectangle-581.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="wrapper">
+                        <div class="div36">0</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="special-effect-parent">
+                <div class="special-effect">Special effect</div>
+                <select class="no-effect-wrapper">
+                  <option value="s">No effect</option>
+                </select>
+              </div>
+              <div class="frame-parent33">
+                <div class="rectangle-parent4">
+                  <input class="rectangle-input" type="checkbox" />
+
+                  <div class="denoise-auto">White balance</div>
+                </div>
+                <div class="frame-parent34">
+                  <div class="rectangle-parent6">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="denoise-auto">Exposure</div>
+                  </div>
+                  <div class="rectangle-parent6">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="denoise-auto">Scaling</div>
+                  </div>
+                </div>
+                <div class="frame-parent34">
+                  <div class="rectangle-parent6">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="denoise-auto">Raw_GMA</div>
+                  </div>
+                  <div class="rectangle-parent6">
+                    <input class="rectangle-input" type="checkbox" />
+
+                    <div class="denoise-auto">Binning</div>
+                  </div>
+                </div>
+              </div>
+              <div class="quality-parent">
+                <div class="light-source">Quality</div>
+                <div class="frame-parent36">
+                  <div class="frame-wrapper3">
+                    <div class="frame-parent21">
+                      <div class="frame-child8"></div>
+                      <img
+                        class="frame-child14"
+                        alt=""
+                        src="./public/rectangle-581.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="wrapper">
+                    <div class="div36">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-continue-button">
+              <div class="continue-button-parent">
+                <button class="continue-button" id="continueButton">
+                  <div class="start">Start</div>
+                </button>
+                <button class="continue-button" id="continueButton1">
+                  <div class="start">Screen Shot</div>
+                </button>
+              </div>
+              <div class="continue-button-parent">
+                <button class="continue-button" id="continueButton2">
+                  <div class="start">Save</div>
+                </button>
+                <button class="continue-button" id="continueButton3">
+                  <div class="start">Exit</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div43">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <div id="addNewTestNamePopup" class="popup-overlay" style="display: none">
+      <div class="add-new-test-name-popup">
+        <div class="add-new-test-name-parent">
+          <div class="add-new-test">Add new test name</div>
+          <div class="patient-id">
+            <div class="new-test-name">NEW TEST NAME</div>
+            <input
+              class="patient-id-input-field"
+              placeholder="ENTER USER ID"
+              type="text"
+              name="yes"
+            />
+          </div>
+          <div class="edit-continue-button1">
+            <button class="continue-button4" id="popupcontinueButton">
+              <div class="accept">Accept</div>
+            </button>
+            <button class="continue-button4" id="popupcontinueButton1">
+              <div class="accept">Cancel</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var popupcontinueButton = document.getElementById("popupcontinueButton");
+      if (popupcontinueButton) {
+        popupcontinueButton.addEventListener("click", function (e) {
+          window.location.href = "./c-a-m-e-r-a-s-e-t-t-i-n-g-s.html";
+        });
+      }
+
+      var popupcontinueButton1 = document.getElementById("popupcontinueButton1");
+      if (popupcontinueButton1) {
+        popupcontinueButton1.addEventListener("click", function (e) {
+          window.location.href = "./c-a-m-e-r-a-s-e-t-t-i-n-g-s.html";
+        });
+      }
+
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function () {
+          var popup = document.getElementById("addNewTestNamePopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(165, 165, 165, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.removeAttribute("closable");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var frameContainer1 = document.getElementById("frameContainer1");
+      if (frameContainer1) {
+        frameContainer1.addEventListener("click", function (e) {
+          window.location.href = "./f-r-a-m-e-s-i-z-e-s-e-t-t-i-n-g-s.html";
+        });
+      }
+
+      var continueButton = document.getElementById("continueButton");
+      if (continueButton) {
+        continueButton.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-a.html";
+        });
+      }
+
+      var continueButton1 = document.getElementById("continueButton1");
+      if (continueButton1) {
+        continueButton1.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-a.html";
+        });
+      }
+
+      var continueButton2 = document.getElementById("continueButton2");
+      if (continueButton2) {
+        continueButton2.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-a.html";
+        });
+      }
+
+      var continueButton3 = document.getElementById("continueButton3");
+      if (continueButton3) {
+        continueButton3.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+      const dragContainer = document.getElementById('dragContainer');
+const movableImage = document.getElementById('movableImage');
+const maxWidth = 440; // Set the maximum allowed width
+const maxValue = 10; // Set the maximum value
+
+let isDragging = false;
+let offsetX, offsetY;
+
+movableImage.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    offsetX = e.clientX - dragContainer.getBoundingClientRect().left;
+    offsetY = e.clientY - dragContainer.getBoundingClientRect().top;
+    movableImage.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        let x = e.clientX - offsetX;
+
+        // Limit the movement within the specified range
+        if (x < 0) {
+            x = 0;
+        } else if (x > maxWidth) {
+            x = maxWidth;
+        }
+
+        movableImage.style.left = `${x}px`;
+
+        // Calculate the value based on the current position
+        const value = Math.round((x / maxWidth) * maxValue);
+        document.querySelector('#brightness0').textContent = value;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    movableImage.style.cursor = 'grab';
+});
+
+const contrastContainer = document.getElementById('contrastContainer');
+const movableContrastImage = document.getElementById('movableContrastImage');
+const maxWidthContrast = 440; // Set the maximum allowed width for contrast
+const maxValueContrast = 10; // Set the maximum value for contrast
+const numStepsContrast = 20; // Set the number of steps for contrast
+
+let isDraggingContrast = false;
+let offsetXContrast, offsetYContrast;
+
+movableContrastImage.addEventListener('mousedown', (e) => {
+    isDraggingContrast = true;
+    offsetXContrast = e.clientX - contrastContainer.getBoundingClientRect().left;
+    offsetYContrast = e.clientY - contrastContainer.getBoundingClientRect().top;
+    movableContrastImage.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDraggingContrast) {
+        let xContrast = e.clientX - offsetXContrast;
+
+        // Limit the movement within the specified range
+        if (xContrast < 0) {
+            xContrast = 0;
+        } else if (xContrast > maxWidthContrast) {
+            xContrast = maxWidthContrast;
+        }
+
+        movableContrastImage.style.left = `${xContrast}px`;
+    }
+});
+
+movableContrastImage.addEventListener('click', (e) => {
+    const xContrast = e.clientX - offsetXContrast;
+
+    // Calculate the nearest step for contrast
+    const stepSizeContrast = maxWidthContrast / numStepsContrast;
+    const nearestStepContrast = Math.round(xContrast / stepSizeContrast);
+
+    // Move the image to the nearest step for contrast
+    movableContrastImage.style.left = `${nearestStepContrast * stepSizeContrast}px`;
+
+    // Update the value based on the current position for contrast
+    const valueContrast = Math.round((nearestStepContrast * stepSizeContrast / maxWidthContrast) * maxValueContrast);
+    document.querySelector('.div387').textContent = valueContrast;
+});
+
+document.addEventListener('mouseup', () => {
+    isDraggingContrast = false;
+    movableContrastImage.style.cursor = 'grab';
+});
+
+movableContrastImage.addEventListener('mousedown', (e) => {
+    isDraggingContrast = true;
+    offsetXContrast = e.clientX - contrastContainer.getBoundingClientRect().left;
+    offsetYContrast = e.clientY - contrastContainer.getBoundingClientRect().top;
+    movableContrastImage.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDraggingContrast) {
+        let xContrast = e.clientX - offsetXContrast;
+
+        // Limit the movement within the specified range
+        if (xContrast < 0) {
+            xContrast = 0;
+        } else if (xContrast > maxWidthContrast) {
+            xContrast = maxWidthContrast;
+        }
+
+        movableContrastImage.style.left = `${xContrast}px`;
+
+        // Calculate the value based on the current position for contrast
+        const valueContrast = Math.round((xContrast / maxWidthContrast) * maxValueContrast);
+        document.querySelector('#Contrast0').textContent = valueContrast;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDraggingContrast = false;
+    movableContrastImage.style.cursor = 'grab';
+});
+
+const saturationContainer = document.getElementById('saturationContainer');
+const movableSaturationImage = document.getElementById('movableSaturationImage');
+const maxWidthSaturation = 440; // Set the maximum allowed width for saturation
+const maxValueSaturation = 10; // Set the maximum value for saturation
+const numStepsSaturation = 20; // Set the number of steps for saturation
+
+let isDraggingSaturation = false;
+let offsetXSaturation, offsetYSaturation;
+
+movableSaturationImage.addEventListener('mousedown', (e) => {
+    isDraggingSaturation = true;
+    offsetXSaturation = e.clientX - saturationContainer.getBoundingClientRect().left;
+    offsetYSaturation = e.clientY - saturationContainer.getBoundingClientRect().top;
+    movableSaturationImage.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (isDraggingSaturation) {
+        let xSaturation = e.clientX - offsetXSaturation;
+
+        // Limit the movement within the specified range
+        if (xSaturation < 0) {
+            xSaturation = 0;
+        } else if (xSaturation > maxWidthSaturation) {
+            xSaturation = maxWidthSaturation;
+        }
+
+        movableSaturationImage.style.left = `${xSaturation}px`;
+
+        // Calculate the value based on the current position for saturation
+        const valueSaturation = Math.round((xSaturation / maxWidthSaturation) * maxValueSaturation);
+        document.querySelector('#ivd387').textContent = valueSaturation;
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    isDraggingSaturation = false;
+    movableSaturationImage.style.cursor = 'grab';
+});
+
+    </script>
+  </body>
+</html>

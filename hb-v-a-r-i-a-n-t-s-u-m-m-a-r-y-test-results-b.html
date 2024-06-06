@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="./hb-v-a-r-i-a-n-t-s-u-m-m-a-r-y-test-results-b.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-variant-summary-test-result">
+      <div class="battery-bar1">
+        <div class="battery-status-bar1">
+          <div class="wifi-map-pin-ic1">
+            <img
+              class="wifi-svgrepo-com-1-11"
+              alt=""
+              src="./public/wifisvgrepocom-1-13.svg"
+            />
+
+            <img class="map-ic-icon1" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic1">
+            <div class="div1">96%</div>
+            <img
+              class="battery-ic-11"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line1"></div>
+      <div class="hb-variant-summary-title-bar">
+        <div class="hb-variant-summary-title-bar1">
+          <div class="home-previous-page-button1">
+            <button class="home-ic1" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic1"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="hb-variant-summary">Hb VARIANT SUMMARY</div>
+          <img
+            class="settings-svgrepo-com-1-icon1"
+            alt=""
+            src="./public/settingssvgrepocom-11.svg"
+          />
+        </div>
+      </div>
+      <div class="anemia-results-div">
+        <div class="anemia-results-div1">
+          <div class="anemia-results-div2">
+            <div class="anemia">Anemia</div>
+            <div class="anemia-results-div3">
+              <div class="anemia-results-div4">
+                <div class="anemia-results-chart"></div>
+                <div class="div-line-3"></div>
+                <div class="div-line-2"></div>
+                <div class="div-line-1"></div>
+                <div class="filled-bar" data-animate-on-scroll></div>
+              </div>
+              <div class="chart-result-type">
+                <div class="chart-result-type1">
+                  <div class="normal" data-animate-on-scroll>Normal</div>
+                  <div class="mild" data-animate-on-scroll>Mild</div>
+                </div>
+                <div class="moderate" data-animate-on-scroll>
+                  <div class="anemia">Moderate</div>
+                  <div class="anemia">(8.0-10.9)</div>
+                </div>
+                <div class="severe" data-animate-on-scroll>Severe</div>
+              </div>
+            </div>
+          </div>
+          <div class="print-button">
+            <div class="print-button1" id="printButtonContainer">
+              <button class="print-button2">
+                <div class="print">PRINT</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="newReportPopup" class="popup-overlay" style="display: none">
+      <div class="new-report">
+        <img class="image-17-icon" alt="" src="./public/image-17@2x.png" />
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+      
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href =
+            "./hb-v-a-r-i-a-n-t-s-u-m-m-a-r-y-test-results-a.html";
+        });
+      }
+      
+      var printButtonContainer = document.getElementById("printButtonContainer");
+      if (printButtonContainer) {
+        printButtonContainer.addEventListener("click", function () {
+          var popup = document.getElementById("newReportPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(30, 30, 30, 0.95)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

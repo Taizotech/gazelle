@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./test-setting-2-off.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="test-setting-2-off">
+      <div class="battery-bar79">
+        <div class="battery-status-bar79">
+          <div class="div216">96%</div>
+          <img
+            class="battery-ic-179"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line79"></div>
+      <div class="home-title-bar124">
+        <div class="home-title-bar125">
+          <div class="home-ic-parent54">
+            <button class="home-ic77" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic74"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="test-setting3">TEST SETTING</div>
+          <img
+            class="settings-svgrepo-com-1-icon63"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen73">
+        <div class="keypad-tone-adjusment-section-container">
+          <div class="keypad-tone-adjusment-section2">
+            <div class="keypad-tone16">
+              <div class="volume-brightness-adjusment18">
+                <div class="div216">Hb VARIANT TEST</div>
+                <div class="toggle-button-on16">
+                  <div class="toggle-button-on-child28" id="rectangle"></div>
+                  <div class="toggle-button-on-child29"></div>
+                </div>
+              </div>
+              <div class="volume-brightness-adjusment18">
+                <div class="div216">COVID-19 TEST</div>
+                <div class="toggle-button-off4" id="toggleButtonOffContainer">
+                  <div class="toggle-button-off-child2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button46" id="nextButton">
+            <div class="done33">DONE</div>
+          </button>
+        </div>
+        <div class="div217">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "./test-setting-all-off.html";
+        });
+      }
+
+      var toggleButtonOffContainer = document.getElementById(
+        "toggleButtonOffContainer"
+      );
+      if (toggleButtonOffContainer) {
+        toggleButtonOffContainer.addEventListener("click", function (e) {
+          window.location.href = "./test-setting-all-on.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

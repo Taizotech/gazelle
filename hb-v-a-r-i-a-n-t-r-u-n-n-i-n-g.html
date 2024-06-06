@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./hb-v-a-r-i-a-n-t-r-u-n-n-i-n-g.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-variant-running">
+      <div class="battery-bar54">
+        <div class="battery-status-bar54">
+          <div class="wifi-map-pin-ic16">
+            <img
+              class="wifi-svgrepo-com-1-116"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon16" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic16">
+            <div class="div159">96%</div>
+            <img
+              class="battery-ic-154"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line54"></div>
+      <div class="hb-variant-running-title-bar">
+        <div class="hb-variant-running-title-bar1">
+          <div class="home-previous-page-button10">
+            <button class="home-ic52" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic50"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="hb-variant-running1">Hb VARIANT RUNNING</div>
+          <div class="settings-svgrepo-com-19"></div>
+        </div>
+      </div>
+      <div class="hb-variant-running-div">
+        <div class="hb-variant-running-div1">
+          <img
+            class="hb-variant-running-video-gif2"
+            src="./public/video5.gif"
+          />
+
+          <div class="start-test-button1">
+            <button class="start-test-button2">
+              <div class="start-test-button3">START TEST</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./f-i-l-l-w-e-l-l-s.html";
+        });
+      }
+      setTimeout(function () {
+      // Redirect to a new page
+      window.location.href = "./hb-v-a-r-i-a-n-t-s-u-m-m-a-r-y-test-results-a.html";
+    }, 12000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.frame-child82,
+.run-all-tests1 {
+  position: relative;
+}
+.frame-child82 {
+  width: 329.5px;
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.successful3 {
+  position: relative;
+  font-weight: 500;
+}
+.frame-wrapper52,
+.frame-wrapper53,
+.run-all-tests-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper52,
+.run-all-tests-parent {
+  flex-direction: column;
+}
+.frame-wrapper52 {
+  font-size: var(--font-size-sm);
+}
+.run-all-tests-parent {
+  position: absolute;
+  top: 107px;
+  left: 14px;
+  gap: var(--gap-mid);
+}
+.run-all-tests-successful {
+  width: 356px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 286px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

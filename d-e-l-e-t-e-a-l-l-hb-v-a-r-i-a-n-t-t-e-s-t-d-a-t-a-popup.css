@@ -1,0 +1,109 @@
+.delete-all-hb,
+.no-covid-19-test-data-popup-item {
+  align-self: stretch;
+  position: relative;
+}
+.no-covid-19-test-data-popup-item {
+  border-top: 1.5px dashed var(--color-white);
+  box-sizing: border-box;
+  height: 1.5px;
+}
+.this-action-cannot {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.this-action-cannot-be-undone-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper30 {
+  align-self: stretch;
+  flex-direction: row;
+}
+.frame-wrapper29,
+.frame-wrapper30,
+.no-covid-19-test-data-popup-inner1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper29 {
+  flex: 1;
+  flex-direction: column;
+}
+.no-covid-19-test-data-popup-inner1 {
+  align-self: stretch;
+  flex-direction: row;
+  font-size: var(--font-size-sm);
+}
+.no-covid-19-test-data-popup4 {
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 141px);
+  width: 281px;
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.no-covid-19-test-data-popup3 {
+  width: 320px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--color-orange);
+  height: 274px;
+  overflow: hidden;
+  flex-shrink: 0;
+  max-width: 90%;
+  max-height: 90%;
+}
+.no {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button-group,
+.yes-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.yes-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-11xl);
+  background-color: var(--color-navajowhite);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  align-items: center;
+}
+.next-button-group {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-101xl);
+}
+.delete-all-hb-variant-test-dat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

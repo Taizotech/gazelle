@@ -1,0 +1,262 @@
+.wifi-svgrepo-com-1-112 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.map-ic-icon12 {
+  width: 19px;
+  position: relative;
+  height: 19px;
+  object-fit: cover;
+}
+.wifi-map-pin-ic12 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 41px;
+}
+.battery-ic-150,
+.div145 {
+  position: relative;
+}
+.battery-ic-150 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-percentage-ic12 {
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+}
+.battery-bar50,
+.battery-percentage-ic12,
+.battery-status-bar50 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar50 {
+  flex: 1;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.battery-bar50 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line50 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic48,
+.left-arrow-previous-page-ic46 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic46 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-previous-page-button6 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.confirm-patient-info4 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-15 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.title-bar-confirm-patient-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 768px;
+}
+.confirm-patient-info-title-bar {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.patient-id5 {
+  align-self: stretch;
+  position: relative;
+}
+.patient-first-name2 {
+  width: 147px;
+  position: relative;
+  display: inline-block;
+}
+.titles {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: 147px;
+}
+.div146,
+.div147,
+.div148,
+.div149,
+.div150 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 5px;
+}
+.div147,
+.div148,
+.div149,
+.div150 {
+  top: 48px;
+}
+.div148,
+.div149,
+.div150 {
+  top: 96px;
+}
+.div149,
+.div150 {
+  top: 144px;
+}
+.div150 {
+  top: 192px;
+}
+.colons {
+  flex: 1;
+  position: relative;
+  height: 208px;
+  max-width: 5px;
+}
+.details {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-13xl);
+  max-width: 150px;
+}
+.confirm-patient-info-card-deta,
+.confirm-patient-info-card1,
+.details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.confirm-patient-info-card-deta {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-7xs);
+}
+.confirm-patient-info-card1 {
+  width: 348px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gainsboro-200);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-22xl) var(--padding-mid);
+  box-sizing: border-box;
+}
+.edit {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.edit-button,
+.edit-continue-button6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.edit-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  flex: 1;
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  align-items: center;
+}
+.edit-continue-button6 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-41xl);
+}
+.confirm-patient-info5 {
+  width: 100%;
+  align-items: center;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-71xl);
+  max-width: 350px;
+}
+.body-screen49,
+.confirm-patient-info3,
+.confirm-patient-info5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen49 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  height: 727px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  padding: var(--padding-26xl) var(--padding-mini) var(--padding-61xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.confirm-patient-info3 {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

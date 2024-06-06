@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./delete-admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="delete-admin">
+      <div class="battery-bar20">
+        <div class="battery-status-bar20">
+          <div class="div72">96%</div>
+          <img
+            class="battery-ic-120"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line20"></div>
+      <div class="home-title-bar36">
+        <div class="home-title-bar37">
+          <div class="home-ic-parent15">
+            <button class="home-ic20" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic20"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="delete-admin1">DELETE ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon20"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen19">
+        <div class="user-credential-input-fields2">
+          <div class="select-admin-to-delete-parent">
+            <div class="select-admin-to">SELECT ADMIN TO DELETE</div>
+            <div class="frame-parent77">
+              <div class="admin-01-ns-delete-wrapper">
+                <div class="admin-01-ns-delete" id="admin01NSDeleteContainer">
+                  <div class="admin-01-ns-delete1" id="admin01NSDelete"></div>
+                  <div class="div72">Admin 1</div>
+                </div>
+              </div>
+              <div class="admin-02-ns-delete">
+                <div class="admin-02-ns-delete1" id="admin02NSDelete"></div>
+                <div class="admin-2">Admin 2</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button13">
+            <div class="done9">DONE</div>
+          </button>
+        </div>
+        <div class="div73">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-user.html";
+        });
+      }
+
+      var admin01NSDelete = document.getElementById("admin01NSDelete");
+      if (admin01NSDelete) {
+        admin01NSDelete.addEventListener("click", function (e) {
+          window.location.href = "./delete-admin-1-selected.html";
+        });
+      }
+
+      var admin01NSDeleteContainer = document.getElementById(
+        "admin01NSDeleteContainer"
+      );
+      if (admin01NSDeleteContainer) {
+        admin01NSDeleteContainer.addEventListener("click", function (e) {
+          window.location.href = "./delete-user1.html";
+        });
+      }
+
+      var admin02NSDelete = document.getElementById("admin02NSDelete");
+      if (admin02NSDelete) {
+        admin02NSDelete.addEventListener("click", function (e) {
+          window.location.href = "./delete-admin-2-selected.html";
+        });
+      }
+    </script>
+  </body>
+</html>

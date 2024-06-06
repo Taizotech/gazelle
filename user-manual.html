@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./user-manual.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="user-manual1">
+      <div class="battery-bar5">
+        <div class="battery-status-bar5">
+          <div class="wifi-map-pin-ic3">
+            <img
+              class="wifi-svgrepo-com-1-13"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon3" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic3">
+            <div class="div8">96%</div>
+            <img
+              class="battery-ic-15"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line5"></div>
+      <div class="home-title-bar6">
+        <div class="home-title-bar7">
+          <div class="frame-div">
+            <button class="home-ic5" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic5"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="user-manual2">USER MANUAL</div>
+          <img
+            class="settings-svgrepo-com-1-icon5"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen4">
+        <div class="device-user-manual-container">
+          <p class="device-user-manual">Device User Manual</p>
+          <p class="to-be-uploaded">(to be uploaded)</p>
+        </div>
+        <div class="div9">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./help.html";
+        });
+      }
+    </script>
+  </body>
+</html>

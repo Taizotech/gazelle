@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./hb-f-u-l-l-t-e-s-t-m-o-d-e.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="hb-full-test-mode">
+      <div class="battery-bar10">
+        <div class="battery-status-bar10">
+          <div class="full-test-mode">96%</div>
+          <img
+            class="battery-ic-110"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line10"></div>
+      <div class="home-title-bar16">
+        <div class="home-title-bar17">
+          <div class="home-ic-parent5">
+            <button class="home-ic10" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic10"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="hb-full-test">Hb FULL TEST MODE</div>
+          <img
+            class="settings-svgrepo-com-1-icon10"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen9">
+        <div class="frame-parent">
+          <div class="keypad-tone-parent1">
+            <div class="keypad-tone3">
+              <div class="volume-brightness-adjusment3">
+                <div class="full-test-mode">FULL TEST MODE</div>
+                <div class="toggle-button-on3">
+                  <div class="toggle-button-on-child2"></div>
+                  <div class="toggle-button-on-child3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="total-no-of-frames-parent">
+              <div class="full-test-mode">TOTAL NO OF FRAMES</div>
+              <div class="patient-name-input-field">
+                <div class="patient-name">465</div>
+                <div class="icon-parent">
+                  <img class="icon" alt="" src="./public/icon.svg" />
+
+                  <img class="icon" alt="" src="./public/icon1.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="total-no-of-frames-parent">
+              <div class="full-test-mode">White Intensity</div>
+              <div class="patient-name-input-field">
+                <div class="patient-name">50</div>
+                <div class="icon-parent">
+                  <img class="icon" alt="" src="./public/icon.svg" />
+
+                  <img class="icon" alt="" src="./public/icon1.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="total-no-of-frames-parent">
+              <div class="full-test-mode">VOLTAGE TO BE SET</div>
+              <div class="patient-name-input-field">
+                <div class="patient-name">50</div>
+                <div class="icon-parent">
+                  <img class="icon" alt="" src="./public/icon.svg" />
+
+                  <img class="icon" alt="" src="./public/icon1.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="total-no-of-frames-parent">
+              <div class="full-test-mode">UV Intensity</div>
+              <div class="patient-name-input-field">
+                <div class="patient-name">50</div>
+                <div class="icon-parent">
+                  <img class="icon" alt="" src="./public/icon.svg" />
+
+                  <img class="icon" alt="" src="./public/icon1.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone3">
+              <div class="volume-brightness-adjusment3">
+                <div class="full-test-mode">WHITE FRAMES</div>
+                <div class="toggle-button-on3">
+                  <div class="toggle-button-on-child2"></div>
+                  <div class="toggle-button-on-child3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone3">
+              <div class="volume-brightness-adjusment3">
+                <div class="full-test-mode">UV FRAMES</div>
+                <div class="toggle-button-on3">
+                  <div class="toggle-button-on-child2"></div>
+                  <div class="toggle-button-on-child3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone3">
+              <div class="volume-brightness-adjusment3">
+                <div class="full-test-mode">USB Transfer</div>
+                <div class="toggle-button-on3">
+                  <div class="toggle-button-on-child2"></div>
+                  <div class="toggle-button-on-child3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button5" id="nextButton">
+            <div class="done3">DONE</div>
+          </button>
+        </div>
+        <div class="div19">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

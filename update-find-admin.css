@@ -1,0 +1,213 @@
+.battery-ic-121,
+.div74 {
+  position: relative;
+}
+.battery-ic-121 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-bar21,
+.battery-status-bar21 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar21 {
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  max-width: 768px;
+}
+.battery-bar21 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line21 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic21,
+.left-arrow-previous-page-ic21 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic21 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-ic-parent16 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.find-admin {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon21 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar39 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar38 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.select-admin-to1 {
+  align-self: stretch;
+  position: relative;
+}
+.admin-01-ns1 {
+  width: 16px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  height: 16px;
+  cursor: pointer;
+}
+.admin-11 {
+  flex: 1;
+  position: relative;
+}
+.admin-01-ns,
+.admin-01-ns-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.admin-01-ns {
+  flex-direction: row;
+  gap: var(--gap-2xs);
+}
+.admin-01-ns-wrapper {
+  flex-direction: column;
+}
+.admin-02-ns1 {
+  width: 16px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  height: 16px;
+  cursor: pointer;
+}
+.frame-parent78,
+.select-admin-to-update-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-parent78 {
+  overflow: hidden;
+  gap: var(--gap-xl);
+}
+.select-admin-to-update-parent {
+  gap: var(--gap-10xl);
+}
+.done10 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button14 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.user-credential-input-fields3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-161xl);
+  max-width: 316px;
+}
+.div75 {
+  width: 414px;
+  position: relative;
+  font-size: var(--font-size-xs);
+  text-align: center;
+  display: inline-block;
+}
+.body-screen20,
+.update-find-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen20 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-61xl) var(--padding-mini);
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.update-find-admin {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

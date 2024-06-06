@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./c-a-m-e-r-a-t-e-s-t-test-running.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="camera-test-test-running">
+      <div class="camera-test-parent">
+        <b class="camera-test1">CAMERA TEST</b>
+        <div class="frame-child72"></div>
+        <div class="frame-parent108">
+          <div class="test-is-running-wrapper">
+            <div class="test-is-running-wrapper">
+              <div class="test-is-running">Test is running</div>
+            </div>
+          </div>
+          <div class="test-is-running-wrapper">
+            <div class="please-wait-container">
+              <div class="test-is-running">Please wait</div>
+              <div class="ellipse-container">
+                <div class="frame-child73" data-animate-on-scroll></div>
+                <div class="frame-child73" data-animate-on-scroll></div>
+                <div class="frame-child75" data-animate-on-scroll></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

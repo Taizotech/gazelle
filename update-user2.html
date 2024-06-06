@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./update-user2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="update-user21">
+      <div class="battery-bar72">
+        <div class="battery-status-bar72">
+          <div class="div202">96%</div>
+          <img
+            class="battery-ic-172"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line72"></div>
+      <div class="home-title-bar110">
+        <div class="home-title-bar111">
+          <div class="home-ic-parent47">
+            <button class="home-ic70" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic67"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="update-user3">UPDATE USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon56"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen66">
+        <div class="user-credential-input-fields28">
+          <div class="select-user-to-update-container">
+            <div class="div202">SELECT USER TO UPDATE</div>
+            <div class="frame-parent105">
+              <div class="u01-wrapper4">
+                <div class="u0119" id="u01Container">
+                  <div class="u01-child17"></div>
+                  <div class="div202">User 1</div>
+                </div>
+              </div>
+              <div class="u0120">
+                <div class="u01-child18"></div>
+                <div class="user-26">User 2</div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button42" id="nextButton">
+            <div class="done27">DONE</div>
+          </button>
+        </div>
+        <div class="div203">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-user.html";
+        });
+      }
+
+      var u01Container = document.getElementById("u01Container");
+      if (u01Container) {
+        u01Container.addEventListener("click", function (e) {
+          window.location.href = "./update-user1.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./update-user-2-input-field.html";
+        });
+      }
+    </script>
+  </body>
+</html>

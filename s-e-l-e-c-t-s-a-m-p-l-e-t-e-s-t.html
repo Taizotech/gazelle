@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./s-e-l-e-c-t-s-a-m-p-l-e-t-e-s-t.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="select-sample-test">
+      <div class="battery-bar92">
+        <div class="battery-status-bar92">
+          <div class="wifi-map-pin-ic35">
+            <img
+              class="wifi-svgrepo-com-1-135"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon35" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic35">
+            <div class="div313">96%</div>
+            <img
+              class="battery-ic-192"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line92"></div>
+      <div class="home-title-bar144">
+        <div class="home-title-bar145">
+          <div class="home-ic-parent62">
+            <button class="home-ic90" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic82"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="select-sample-test1">SELECT SAMPLE TEST</div>
+          <img
+            class="settings-svgrepo-com-1-icon73"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen83">
+        <div class="hb-variant-running5">
+          <div class="test-buttons">
+            <div class="hb-variant-test15" id="hbVariantTest">
+              <b class="hb-variant-sample">Hb VARIANT SAMPLE TEST</b>
+            </div>
+            <div class="hb-variant-test15" id="covid19TestContainer">
+              <b class="hb-variant-sample">COVID SAMPLE TEST</b>
+            </div>
+            <div class="covid-19-test7">
+              <b class="hb-variant-sample">FERRITIN SAMPLE TEST</b>
+            </div>
+            <div class="covid-19-test7">
+              <b class="hb-variant-sample">HIV 1 / 2 SAMPLE TEST</b>
+            </div>
+            <div class="covid-19-test7">
+              <b class="hb-variant-sample">Hep B SAMPLE TEST</b>
+            </div>
+            <div class="covid-19-test7">
+              <b class="hb-variant-sample">Hep C SAMPLE TEST</b>
+            </div>
+          </div>
+        </div>
+        <div class="div314">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./test-reader.html";
+        });
+      }
+
+      var hbVariantTest = document.getElementById("hbVariantTest");
+      if (hbVariantTest) {
+        hbVariantTest.addEventListener("click", function (e) {
+          window.location.href =
+            "./m-i-x-b-l-o-o-d-a-n-d-m-a-r-k-e-r-f-l-u-i-d-a.html";
+        });
+      }
+
+      var covid19TestContainer = document.getElementById("covid19TestContainer");
+      if (covid19TestContainer) {
+        covid19TestContainer.addEventListener("click", function (e) {
+          window.location.href = "./covid-19-p-r-e-p-a-r-e-s-a-m-p-l-e.html";
+        });
+      }
+    </script>
+  </body>
+</html>

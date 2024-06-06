@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./c-o-v-i-d-19-t-e-s-t-s-e-t-t-i-n-g.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="covid-19-test-setting">
+      <div class="battery-bar11">
+        <div class="battery-status-bar11">
+          <div class="quick-test">96%</div>
+          <img
+            class="battery-ic-111"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line11"></div>
+      <div class="home-title-bar18">
+        <div class="home-title-bar19">
+          <div class="home-ic-parent6">
+            <button class="home-ic11" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic11"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="covid-19-test-setting1">COVID-19 TEST SETTING</div>
+          <img
+            class="settings-svgrepo-com-1-icon11"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen10">
+        <div class="frame-group">
+          <div class="keypad-tone-parent2">
+            <div class="keypad-tone7">
+              <div class="volume-brightness-adjusment7">
+                <div class="quick-test">QUICK TEST</div>
+                <div class="toggle-button-on7">
+                  <div class="toggle-button-on-child10"></div>
+                  <div class="toggle-button-on-child11"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone7">
+              <div class="volume-brightness-adjusment7">
+                <div class="quick-test">STANDARD TEST</div>
+                <div class="rectangle-parent">
+                  <div class="frame-child"></div>
+                  <div class="frame-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone7">
+              <div class="volume-brightness-adjusment7">
+                <div class="quick-test">LMH Enable</div>
+                <div class="toggle-button-on7">
+                  <div class="toggle-button-on-child10"></div>
+                  <div class="toggle-button-on-child11"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone7">
+              <div class="volume-brightness-adjusment7">
+                <div class="quick-test">Production Mode</div>
+                <div class="rectangle-parent">
+                  <div class="frame-child"></div>
+                  <div class="frame-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="keypad-tone7">
+              <div class="volume-brightness-adjusment7">
+                <div class="quick-test">Show Covid Histogram</div>
+                <div class="rectangle-parent">
+                  <div class="frame-child"></div>
+                  <div class="frame-item"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="next-button6" id="nextButton">
+            <div class="done4">DONE</div>
+          </button>
+        </div>
+        <div class="div21">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

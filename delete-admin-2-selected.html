@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./delete-admin-2-selected.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="delete-admin-2-selected">
+      <div class="battery-bar23">
+        <div class="battery-status-bar23">
+          <div class="div78">96%</div>
+          <img
+            class="battery-ic-123"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line23"></div>
+      <div class="home-title-bar42">
+        <div class="home-title-bar43">
+          <div class="home-ic-parent18">
+            <button class="home-ic23" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic23"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="delete-admin3">DELETE ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon23"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen22">
+        <div class="user-credential-input-fields5">
+          <div class="select-admin-to-delete-container">
+            <div class="div78">SELECT ADMIN TO DELETE</div>
+            <div class="frame-parent80">
+              <div class="admin-01-ns-frame">
+                <div class="admin-01-ns4">
+                  <div class="admin-01-ns5" id="admin01NS"></div>
+                  <div class="admin-13">Admin 1</div>
+                </div>
+              </div>
+              <div class="admin-01-ns4">
+                <div class="admin-02-ns5"></div>
+                <div class="admin-13">Admin 2</div>
+              </div>
+            </div>
+          </div>
+          <button class="done-button2" id="doneButton">
+            <div class="done12">DONE</div>
+          </button>
+        </div>
+        <div class="div79">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./edit-admin.html";
+        });
+      }
+
+      var admin01NS = document.getElementById("admin01NS");
+      if (admin01NS) {
+        admin01NS.addEventListener("click", function (e) {
+          window.location.href = "./delete-admin-1-selected.html";
+        });
+      }
+
+      var doneButton = document.getElementById("doneButton");
+      if (doneButton) {
+        doneButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-2-delete-confirmation-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>

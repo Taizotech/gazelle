@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./edit-user.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="edit-user2">
+      <div class="battery-bar65">
+        <div class="battery-status-bar65">
+          <div class="wifi-map-pin-ic25">
+            <img
+              class="wifi-svgrepo-com-1-125"
+              alt=""
+              src="./public/wifisvgrepocom-1-1.svg"
+            />
+
+            <img class="map-ic-icon25" alt="" src="./public/map-ic@2x.png" />
+          </div>
+          <div class="battery-percentage-ic25">
+            <div class="div188">96%</div>
+            <img
+              class="battery-ic-165"
+              alt=""
+              src="./public/battery-ic-1@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="line65"></div>
+      <div class="home-title-bar96">
+        <div class="home-title-bar97">
+          <div class="home-ic-parent40">
+            <button class="home-ic63" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic60"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="edit-user3">EDIT USER</div>
+          <img
+            class="settings-svgrepo-com-1-icon49"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen59">
+        <div class="help-menu-buttons-parent2">
+          <div class="help-menu-buttons17">
+            <button class="support-button16" id="supportButton">
+              <b class="update-user">ADD USER</b>
+            </button>
+            <button class="user-manual-button12" id="userManualButton">
+              <b class="update-user">DELETE USER</b>
+            </button>
+          </div>
+          <div class="help-menu-buttons18" id="helpMenuButtonsContainer1">
+            <button class="support-button17">
+              <b class="update-user">UPDATE USER</b>
+            </button>
+          </div>
+        </div>
+        <div class="div189">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./admin-settings.html";
+        });
+      }
+
+      var supportButton = document.getElementById("supportButton");
+      if (supportButton) {
+        supportButton.addEventListener("click", function (e) {
+          window.location.href = "./add-user.html";
+        });
+      }
+
+      var userManualButton = document.getElementById("userManualButton");
+      if (userManualButton) {
+        userManualButton.addEventListener("click", function (e) {
+          window.location.href = "./delete-user.html";
+        });
+      }
+
+      var helpMenuButtonsContainer1 = document.getElementById(
+        "helpMenuButtonsContainer1"
+      );
+      if (helpMenuButtonsContainer1) {
+        helpMenuButtonsContainer1.addEventListener("click", function (e) {
+          window.location.href = "./update-find-user.html";
+        });
+      }
+    </script>
+  </body>
+</html>

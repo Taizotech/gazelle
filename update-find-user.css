@@ -1,0 +1,223 @@
+.battery-ic-170,
+.div198 {
+  position: relative;
+}
+.battery-ic-170 {
+  width: 30px;
+  height: 16px;
+  object-fit: cover;
+}
+.battery-bar70,
+.battery-status-bar70 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.battery-status-bar70 {
+  flex: 1;
+  justify-content: flex-end;
+  gap: var(--gap-8xs);
+  max-width: 768px;
+}
+.battery-bar70 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-mini);
+}
+.line70 {
+  background-color: var(--color-white);
+  height: 0.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home-ic68,
+.left-arrow-previous-page-ic65 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  background-image: url(./public/image4@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.left-arrow-previous-page-ic65 {
+  background-image: url(./public/image5@2x.png);
+}
+.home-ic-parent45 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  max-width: 56px;
+}
+.find-user {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.settings-svgrepo-com-1-icon54 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.home-title-bar107 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-21xl) 0 0;
+  box-sizing: border-box;
+  max-width: 768px;
+}
+.home-title-bar106 {
+  align-self: stretch;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-mini);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.select-user-to2 {
+  align-self: stretch;
+  position: relative;
+}
+.u01-child13 {
+  width: 16px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  height: 16px;
+  cursor: pointer;
+}
+.u01-wrapper2,
+.u0115 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.u0115 {
+  width: 76px;
+  flex-direction: row;
+  gap: var(--gap-2xs);
+}
+.u01-wrapper2 {
+  align-self: stretch;
+  flex-direction: column;
+}
+.u01-child14 {
+  width: 16px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  height: 16px;
+}
+.user-24 {
+  flex: 1;
+  position: relative;
+}
+.frame-parent103,
+.select-user-to-update-parent,
+.u0116 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.u0116 {
+  width: 76px;
+  flex-direction: row;
+  gap: var(--gap-2xs);
+  cursor: pointer;
+}
+.frame-parent103,
+.select-user-to-update-parent {
+  align-self: stretch;
+  flex-direction: column;
+}
+.frame-parent103 {
+  overflow: hidden;
+  gap: var(--gap-xl);
+}
+.select-user-to-update-parent {
+  gap: var(--gap-10xl);
+}
+.done25 {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  font-family: var(--font-work-sans);
+  color: var(--color-black);
+  text-align: left;
+}
+.next-button40 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-base) var(--padding-47xl);
+  background-color: var(--color-navajowhite);
+  border-radius: var(--br-9xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.user-credential-input-fields26 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  gap: var(--gap-161xl);
+  max-width: 316px;
+}
+.div199 {
+  width: 414px;
+  position: relative;
+  font-size: var(--font-size-xs);
+  text-align: center;
+  display: inline-block;
+}
+.body-screen64,
+.update-find-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body-screen64 {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-61xl) var(--padding-mini);
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+}
+.update-find-user {
+  width: 100%;
+  position: relative;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+  font-family: var(--font-work-sans);
+}

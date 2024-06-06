@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./cloud-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="cloud-1">
+      <div class="battery-bar88">
+        <div class="battery-status-bar88">
+          <div class="div305">96%</div>
+          <img
+            class="battery-ic-188"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line88"></div>
+      <div class="home-title-bar136">
+        <div class="home-title-bar137">
+          <div class="home-ic-parent58">
+            <button class="home-ic86" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic78"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="cloud-transfer-status4">CLOUD TRANSFER STATUS</div>
+          <img
+            class="settings-svgrepo-com-1-icon69"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen79">
+        <div class="confirm-patient-info8">
+          <div class="select-test-id-to-transfer-parent">
+            <div class="div305">SELECT TEST ID TO TRANSFER</div>
+            <div class="frame-parent111">
+              <div class="u01-wrapper6">
+                <div class="u0124">
+                  <div class="u01-child21" id="ellipse"></div>
+                  <div class="u0125">U01</div>
+                </div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U02</div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U03</div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U04</div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U05</div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U06</div>
+              </div>
+              <div class="u0126">
+                <div class="u01-child22"></div>
+                <div class="u0125">U07</div>
+              </div>
+            </div>
+          </div>
+          <div class="edit-continue-button8">
+            <button class="continue-button19">
+              <div class="transfer-selected1">TRANSFER SELECTED</div>
+            </button>
+            <button class="continue-button19" id="continueButton1">
+              <div class="transfer-selected1">TRANSFER ALL</div>
+            </button>
+            <button class="continue-button19" id="continueButton2">
+              <div class="transfer-selected1">DONE</div>
+            </button>
+          </div>
+        </div>
+        <div class="div306">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+
+      var ellipse = document.getElementById("ellipse");
+      if (ellipse) {
+        ellipse.addEventListener("click", function (e) {
+          window.location.href = "./cloud-2.html";
+        });
+      }
+
+      var continueButton1 = document.getElementById("continueButton1");
+      if (continueButton1) {
+        continueButton1.addEventListener("click", function (e) {
+          window.location.href = "./force-cloud-transfer.html";
+        });
+      }
+
+      var continueButton2 = document.getElementById("continueButton2");
+      if (continueButton2) {
+        continueButton2.addEventListener("click", function (e) {
+          window.location.href = "./support-settings.html";
+        });
+      }
+    </script>
+  </body>
+</html>

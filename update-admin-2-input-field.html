@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./update-admin-2-input-field.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work Sans:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="update-admin-2-input-field">
+      <div class="battery-bar127">
+        <div class="battery-status-bar127">
+          <div class="div401">96%</div>
+          <img
+            class="battery-ic-1127"
+            alt=""
+            src="./public/battery-ic-1@2x.png"
+          />
+        </div>
+      </div>
+      <div class="line127"></div>
+      <div class="home-title-bar210">
+        <div class="home-title-bar211">
+          <div class="home-ic-parent87">
+            <button class="home-ic125" id="homeIc"></button>
+            <button
+              class="left-arrow-previous-page-ic107"
+              id="leftArrowPreviousPageIc"
+            ></button>
+          </div>
+          <div class="update-admin4">UPDATE ADMIN</div>
+          <img
+            class="settings-svgrepo-com-1-icon106"
+            alt=""
+            src="./public/settingssvgrepocom-12.svg"
+          />
+        </div>
+      </div>
+      <div class="body-screen116">
+        <div class="user-credential-input-fields39">
+          <div class="user-id-passworkd9">
+            <div class="user-id36">
+              <div class="div401">USER ID</div>
+              <input
+                class="user-id38"
+                value="Admin 2"
+                placeholder="Enter User ID"
+                type="text"
+                name="yes"
+              />
+            </div>
+            <div class="password31">
+              <div class="div401">USER PASSWORD</div>
+              <input
+                class="password32"
+                placeholder="Enter Admin Password"
+                type="password"
+              />
+            </div>
+            <div class="password31">
+              <div class="div401">CONFIRM PASSWORD</div>
+              <input
+                class="password32"
+                placeholder="Confirm Password"
+                type="password"
+              />
+            </div>
+          </div>
+          <button class="next-button76" id="nextButton">
+            <div class="done51">DONE</div>
+          </button>
+        </div>
+        <div class="div402">14:24 15/11/2023</div>
+      </div>
+    </div>
+
+    <script>
+      var homeIc = document.getElementById("homeIc");
+      if (homeIc) {
+        homeIc.addEventListener("click", function (e) {
+          window.location.href = "./test-button-interaction.html";
+        });
+      }
+
+      var leftArrowPreviousPageIc = document.getElementById(
+        "leftArrowPreviousPageIc"
+      );
+      if (leftArrowPreviousPageIc) {
+        leftArrowPreviousPageIc.addEventListener("click", function (e) {
+          window.location.href = "./update-find-admin.html";
+        });
+      }
+
+      var nextButton = document.getElementById("nextButton");
+      if (nextButton) {
+        nextButton.addEventListener("click", function (e) {
+          window.location.href = "./admin-2-updated-popup.html";
+        });
+      }
+    </script>
+  </body>
+</html>
